@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>履歷島｜洪斌翔</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fbf3ea;--sea:#dbeaf0;--ink:#3a2a22;--mut:#7a6a5f;--card:#fffaf4;--line:#e6d5c3;--acc:#db6a41;--bld:#fffaf2;
+--c0:#f2b08a;--c1:#f4cf7a;--c2:#a9d4a0;--c3:#8fcfc6;--c4:#9ec1ee;--c5:#c9b0e6;--c6:#f1a6b4;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1714;--sea:#26333a;--ink:#f1e6dc;--mut:#b4a496;--card:#2a211c;--line:#41342b;--acc:#f08a5d;--bld:#f4e7da;
+--c0:#b8683f;--c1:#b8923a;--c2:#5f9a63;--c3:#4a9a92;--c4:#5a82b8;--c5:#8567b0;--c6:#b8607a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1d1714;--sea:#26333a;--ink:#f1e6dc;--mut:#b4a496;--card:#2a211c;--line:#41342b;--acc:#f08a5d;--bld:#f4e7da;
+--c0:#b8683f;--c1:#b8923a;--c2:#5f9a63;--c3:#4a9a92;--c4:#5a82b8;--c5:#8567b0;--c6:#b8607a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}
+header{padding:22px 18px 8px;max-width:1040px;margin:auto}
+h1{margin:0;font-size:28px;letter-spacing:.04em}h1 i{font-style:normal;color:var(--acc)}
+.sub{color:var(--mut);margin:2px 0 0}
+.bar{max-width:1040px;margin:8px auto;padding:0 18px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar button,.bar input{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 14px;border-radius:999px}
+.bar button{cursor:pointer}.bar button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.bar input{min-width:140px;flex:1;max-width:240px}
+#clr{display:none}
+main{max-width:1040px;margin:auto;padding:6px 18px 40px;display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}
+#map{flex:1 1 440px;min-width:0;background:var(--sea);border-radius:20px;padding:6px}
+#map svg{width:100%;height:auto;display:block}
+#panel{flex:1 1 280px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 18px}
+#panel h2{margin:0 0 2px;font-size:20px}#panel h3{margin:14px 0 4px;font-size:14px;color:var(--mut)}
+.m{color:var(--mut);margin:4px 0}ul{padding:0;margin:8px 0;list-style:none}li{margin:7px 0}
+.chip{display:inline-block;font-size:12px;border-radius:999px;padding:0 9px;margin:2px 6px 2px 0;background:var(--line);color:var(--ink)}
+.lk{margin:4px 0}.lk a{color:var(--acc);cursor:pointer;font-weight:600;text-decoration:underline}
+.isl{cursor:pointer;transition:opacity .2s;outline:none}.i{transition:transform .2s}.isl.on .i{transform:translateY(-5px)}.isl:hover .i{filter:brightness(1.08)}
+.isl:focus-visible .top{stroke:var(--acc);stroke-width:3}
+.top{stroke:var(--card);stroke-width:2}
+.view{display:none;width:100%}.view.show{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card,.row{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 16px}
+.row{margin-bottom:10px;cursor:pointer}.row small{margin-left:10px;color:var(--mut)}
+.row:hover{border-color:var(--acc)}
+footer{max-width:1040px;margin:auto;padding:0 18px 30px;color:var(--mut);font-size:13px}
+:root{--bg:#efe3c4;--card:#faf0d4;--line:#d7bd8a;--ink:#3b2a1a;--mut:#7a6445;--acc:#b8431f;--bd:#5a3a22;--w1:#4f9bd0;--w2:#8cc6ea;--g1:#7bbf5a;--g2:#5fa044;--g3:#9bd57a;--t1:#2f7d3a;--t2:#4fa352;--fence:#8b5a2b;--dirt:#d9b27c;--dirt2:#c99a5b;--cliff:#8a6a3c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1a14;--card:#2e261d;--line:#4a3d2b;--ink:#f1e6cf;--mut:#b9a98a;--acc:#f0935f;--bd:#0f0b07;--w1:#1f4a6e;--w2:#2f6b98;--g1:#3f7a3a;--g2:#2f6030;--g3:#4f8d45;--t1:#1e5a2a;--t2:#2f7a3a;--fence:#6b4423;--dirt:#a88556;--dirt2:#8a6a3c;--cliff:#5a4528}}
+:root[data-theme="dark"]{--bg:#1f1a14;--card:#2e261d;--line:#4a3d2b;--ink:#f1e6cf;--mut:#b9a98a;--acc:#f0935f;--bd:#0f0b07;--w1:#1f4a6e;--w2:#2f6b98;--g1:#3f7a3a;--g2:#2f6030;--g3:#4f8d45;--t1:#1e5a2a;--t2:#2f7a3a;--fence:#6b4423;--dirt:#a88556;--dirt2:#8a6a3c;--cliff:#5a4528}
+.bar button,.bar input,#panel,.card,.row{border:2px solid var(--bd);border-radius:4px;box-shadow:3px 3px 0 var(--bd)}
+#map{background:var(--w1);border:2px solid var(--bd);border-radius:4px;box-shadow:3px 3px 0 var(--bd)}
+#map svg{shape-rendering:crispEdges}
+.chip{border-radius:2px}h1{text-shadow:2px 2px 0 var(--line)}#hl{max-width:1040px;margin:0 auto 8px;padding:0 18px}#hl b{display:block;margin-bottom:4px}
+:root{--gold:#c9a24a}
+body{background:radial-gradient(ellipse at 20% 0,var(--card),var(--bg) 60%)}
+h1,#panel h2{font-family:'Noto Serif TC','Songti TC',serif;font-weight:800}
+h1{text-shadow:0 2px 10px rgba(201,162,74,.55)}
+.bar button,.bar input,#panel,.card,.row{border:1px solid var(--gold);border-radius:14px;box-shadow:0 6px 18px rgba(60,40,10,.16)}
+.bar button,.bar input{border-radius:999px}
+#map{position:relative;overflow:hidden;border:1px solid var(--gold);border-radius:20px;box-shadow:0 10px 30px rgba(40,30,10,.32);background:#2a78ad}
+#map svg{shape-rendering:auto;filter:saturate(1.12) contrast(1.04)}
+.chip{border-radius:999px}
+.isl.on .pt{stroke:#ffe27a;stroke-width:4}
+.ts{position:absolute;left:0;right:0;height:9%;pointer-events:none;backdrop-filter:blur(2.5px);-webkit-backdrop-filter:blur(2.5px)}
+.ts.t{top:0;-webkit-mask-image:linear-gradient(#000,transparent);mask-image:linear-gradient(#000,transparent)}
+.ts.b{bottom:0;-webkit-mask-image:linear-gradient(transparent,#000);mask-image:linear-gradient(transparent,#000)}
+#map::after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,transparent 55%,rgba(30,20,70,.38)),linear-gradient(135deg,rgba(255,225,150,.22),transparent 55%)}
+#sp{position:absolute;left:12px;right:12px;bottom:12px;z-index:5;background:rgba(252,243,214,.97);color:#3b2a1a;border:2px solid var(--gold);border-radius:16px;padding:7px 12px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+#sp[hidden]{display:none}#sp p{margin:4px 0;min-height:2.6em;font-size:14px;line-height:1.5}.sph{font-family:'Noto Serif TC',serif}
+.spb{display:flex;gap:8px;justify-content:flex-end}.spb button{font:inherit;border:1px solid var(--gold);background:#fff7de;color:#3b2a1a;border-radius:999px;padding:3px 14px;cursor:pointer}
+header,.bar,main,#hl,footer{max-width:1240px}
+#map{flex:2.2 1 540px}#panel{flex:1 1 250px}
+body{background:radial-gradient(circle at 1px 1px,rgba(60,40,20,.13) 1px,transparent 1.6px) 0 0/7px 7px,var(--bg)}
+.bar button,.bar input,#panel,.card,.row{border:2.5px solid #2b1a10;border-radius:10px;box-shadow:4px 4px 0 #2b1a10}
+.bar button,.bar input{border-radius:999px}
+h1{text-shadow:none;letter-spacing:.05em}
+#map{border:3px solid #2b1a10;border-radius:14px;box-shadow:6px 6px 0 #2b1a10;background:#43b6dd}
+#map svg{filter:saturate(1.2)}
+.ts{display:none}
+#map::after{background:radial-gradient(circle at 2px 2px,rgba(30,20,60,.35) 1.2px,transparent 1.9px) 0 0/7px 7px;-webkit-mask-image:linear-gradient(135deg,transparent 62%,#000);mask-image:linear-gradient(135deg,transparent 62%,#000)}
+#sp{background:#fffdf5;border:3px solid #2b1a10;border-radius:18px;box-shadow:5px 5px 0 #2b1a10;color:#2b1a10}
+.spb button{border:2px solid #2b1a10}.chip{border:1.5px solid #2b1a10}
+.bar button,.bar input,#panel,.card,.row{border:1px solid var(--gold);border-radius:14px;box-shadow:0 5px 16px rgba(60,40,10,.18)}
+.bar button,.bar input{border-radius:999px}
+body{background:radial-gradient(ellipse at 20% 0,var(--card),var(--bg) 60%)}
+#map{border:3px solid #7a5230;border-radius:16px;box-shadow:0 10px 28px rgba(40,30,10,.35);background:#2a78ad}
+#map svg{filter:saturate(1.08)}
+#map::after{background:radial-gradient(ellipse at 50% 45%,transparent 58%,rgba(20,30,70,.32));-webkit-mask-image:none;mask-image:none}
+#sp{background:#f7ebc8;border:3px solid #7a5230;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.4)}
+.spb button{border:1px solid #7a5230}.chip{border:none}
+</style><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;800&display=swap" rel="stylesheet"></head><body>
+<header>
+<h1 id="h1">履歷<i>島</i>｜洪斌翔</h1>
+<p class="sub" id="sub">中央首都統籌全局，六座衛星城鎮以道路與橋梁相連。形式致敬 HEART 政策島。</p>
+</header><div id="hl"></div>
+<div class="bar">
+<button data-v="map" class="on">全景</button><button data-v="list">城鎮介紹</button><button data-v="time">建設歷程</button><button data-v="prod">產品</button>
+<input id="q" placeholder="搜尋，例如：報價、NPI">
+<button id="clr">清除篩選 ✕</button><button id="lg" aria-label="Language">EN</button>
+</div>
+<main>
+<section id="map" class="view show" style="padding:6px"><svg id="svg" viewBox="-250 -270 800 540" role="img" aria-label="履歷島全景圖"></svg><div class="ts t"></div><div class="ts b"></div><div id="sp" hidden><div class="sph">👑 <b id="spt"></b></div><p id="spm"></p><div class="spb"><button id="spn"></button><button id="spx">✕</button></div></div></section>
+<aside id="panel" class="view show"></aside>
+<section id="list" class="view"><div class="grid" id="grid"></div></section>
+<section id="prod" class="view"><div class="grid" id="pg"></div></section><section id="time" class="view"><p class="m" id="th">點一份工作，回到全景看它點亮了哪些城鎮。</p><div id="rows"></div></section>
+</main>
+<footer id="ft">這是原型，內容整理自本人履歷。協作線的說明是對能力之間關係的解讀，並非正式職務描述。</footer>
+<script>
+const R=76,S=Math.sqrt(3);
+const J={au:['達擎 AUO Display Plus','2024/05–至今'],ing:['鴻佰 Ingrasys','2022/05–2024/05'],ctr:['中強光電 Coretronic','2017/03–2022/05'],pc:['寶成 Pou Chen','2013/05–2017/03'],es:['玉山銀行 E.SUN','2012/11–2013/05'],zy:['喬暘 Zylux','2010/08–2012/05']};
+const I=[
+{n:'首都・專案管理 Lv.16',e:'🏰',p:[0,0],d:'年資 16 年（Lv.16）：跨部門協調、時程與風險',it:[['ctr','追蹤時程、開發成本、風險與客戶需求'],['ctr','管理政府標案專案，赴現場並備妥客戶驗收報告'],['ing','與跨部門團隊檢討產能、良率與客戶 KPI'],['pc','設立台灣創新辦公室並訓練團隊成員'],['zy','協助 CES 與 Computex 產品準備']]},
+{n:'客戶管理',e:'🤝',p:[0,-1],d:'聽懂需求，確認架構與規格',it:[['au','定期拜訪客戶，討論需求、規格與應用，推廣業務並爭取新的合作案'],['ing','面對 AI server 全新的產品技術，以工廠端專案經理（PM）的身分，與前端團隊共同釐清客戶規格，並直接參與客戶端新技術與新製程的需求討論。能獨立面對客戶，精準掌握並回應製程需求，銅接設計端與製造端'],['ctr','對接 Fujitsu、Diebold Nixdorf、GE Healthcare 等客戶，確認 AIO／工業電腦的架構與規格，深耕關係並爭取訂單'],['pc','2014 年起擔任 Under Armour Innovation 客戶窗口'],['es','經營企業客戶，媒合金融服務與需求'],['zy','協助 Klipsch、Delphi 等客戶 RFQ 與需求溝通']]},
+{n:'產品規劃',e:'🗺️',p:[1,-1],d:'從客戶機會到 Roadmap 與方案',it:[['au','管理 HiRaso active-matrix ChLCD 產品線'],['au','依客戶需求制定產品 Roadmap 與解決方案'],['au','規劃連結客戶機會、技術與市場的商業計畫'],['au','戶外／軌道交通 AIO，整合工業電腦提供一站式服務'],['ctr','與跨部門討論新產品構想與上市']]},
+{n:'成本報價',e:'🧮',p:[1,0],d:'算清成本，兼顧客戶目標價與利潤',it:[['au','負責產品成本計算，分析主要成本驅動因素'],['au','依規格、數量、交期與商務條件主導報價'],['ctr','管理開發成本'],['zy','處理 RFQ 與客戶需求']]},
+{n:'NPI 量產',e:'🏭',p:[0,1],d:'從開發、試產到量產',it:[['ing','主導 NVIDIA、Apple 伺服器產品 NPI 至量產'],['ing','伺服器主板與模組組裝專案'],['ing','建立 Quick Turn 快速出貨流程'],['ctr','顯示器與 AIO 的 ODM 專案至量產'],['ctr','疫情期間協助建立台灣產線並量產'],['pc','鞋類 NPI：設計、打樣到量產準備'],['zy','Pioneer OEM 產品 NPI']]},
+{n:'系統整合',e:'🔧',p:[-1,1],d:'硬體、軟體與驗證接在一起',it:[['ing','AI server 測試環境：參與 Testing POD Room 規格，涵蓋測試、基礎設施與生產檢查'],['ing','建立並檢查伺服器組裝與自動化測試方案'],['au','以先進技術整合工業電腦系統，搭配作業系統，提供一站式方案'],['au','NXP／Rockchip 搭配 Android 平台的產品'],['ctr','x86（Intel／Windows）平台的 AIO 與工業電腦，協調硬體、軟體與系統驗證']]},
+{n:'創新導入',e:'💡',p:[-1,0],d:'把新技術變成可製造的產品',it:[['au','把新技術導入戶外／軌道交通 AIO，確保它能量產，並符合市場需求'],['ing','導入全新 AI server 產品線。面對市場快速興起，以及產業領頭客戶提出的全新規範與需求，整合跨部門團隊與外部資源，透過系統性協作與流程優化，提升新產品的生產效率與良率'],['pc','把新材料、新製程與跨產業做法轉成可製造的產品：參與 Under Armour Speedform 開發，並共同開發 3D 列印鞋，協助導入運動鞋量產']]}
+];
+const L=[[1,2,'客戶需求變成產品 Roadmap 與方案'],[2,3,'規格定了，成本與報價才算得準'],[3,4,'報價前先確認可以量產'],[4,5,'驗證通過，才能放心量產'],[5,6,'新技術要能整合進系統'],[6,1,'新技術回應客戶真正的需求']];
+I.push({n:'海外據點',e:'🌏',p:[0,0],d:'外派經驗，對接美國與歐洲客戶',it:[['ing','對接 NVIDIA、Apple 等美商客戶的伺服器專案'],['ctr','對接 Diebold Nixdorf、GE Healthcare 等歐美客戶'],['pc','擔任 Under Armour Innovation 美商客戶窗口'],['zy','處理 Klipsch、Delphi 等歐美客戶 RFQ'],['','具海外外派經驗']]});
+I.forEach((o,i)=>{o.k=i;o.x=R*1.5*o.p[0];o.y=R*S*(o.p[1]+o.p[0]/2)});
+const tot=I.reduce((a,o)=>a+o.it.length,0);
+const $=s=>document.querySelector(s);
+let sel=-1,jobF='',qs='',view='map',lang='zh';
+const EN={
+n:['Capital Lv.16','Customers','Product Plan','Cost & Quote','NPI','Integration','Innovation','Overseas Base'],
+d:['16 years of experience (Lv.16): cross-team coordination, schedule and risk','Understand needs, confirm architecture and specs','From customer opportunity to roadmap and solution','Know the cost, balance target price and margin','From development and pilot run to mass production','Hardware, software and validation working as one','Turning new technology into buildable products','Overseas assignment experience, working with U.S. and European customers'],
+it:[
+['Tracked schedule, development cost, risks and customer needs','Ran government tender projects, on-site checks and customer acceptance reports','Reviewed capacity, yield and customer KPIs with cross-functional teams','Set up the Taiwan innovation office and trained team members','Supported CES and Computex product preparation'],
+['Visit customers regularly to discuss needs, specs and applications, promote our business and pursue new projects','Took the factory-side PM role on a brand-new AI server technology. Clarified customer specs with the front-end team and joined customer discussions on new technology and process requirements directly. Met customers independently, understood process needs precisely and responded to them, bridging design and manufacturing','Worked directly with Fujitsu, Diebold Nixdorf and GE Healthcare, confirmed AIO / industrial PC architecture and specs, built long-term relationships and pursued orders','Became the Under Armour Innovation customer contact in 2014','Built corporate accounts and matched needs with financial services','Supported RFQs and requirements for Klipsch, Delphi and others'],
+['Manage the HiRaso active-matrix ChLCD product line','Set product roadmaps and solution plans from customer needs','Built business plans linking customer opportunities, technology and market','Outdoor / rail transit AIO with integrated industrial PCs as a one-stop solution','Discussed new product ideas and launches across teams'],
+['Calculate product cost and analyze key cost drivers','Lead quotations based on specs, volume, delivery dates and commercial terms','Managed development cost','Handled RFQs and customer requirements'],
+['Led NPI for NVIDIA and Apple server products through mass production','Server motherboard and module assembly programs','Set up the Quick Turn shipment process','ODM programs for displays and AIO through mass production','Helped set up a Taiwan production line during the pandemic','Footwear NPI from design and sampling to mass production prep','NPI for Pioneer OEM products'],
+['AI server test environment: worked on Testing POD Room specifications covering testing, infrastructure and production checks','Built and reviewed server assembly and automated testing plans','Integrated advanced technology with industrial PC systems and operating systems for a one-stop solution','Products on NXP / Rockchip with Android','x86 (Intel / Windows) AIO and industrial PCs, coordinating hardware, software and system validation'],
+['Brought new technology into outdoor / rail transit AIO, making sure it can be mass-produced and fits market needs','Brought a new AI server product line into production. Facing a fast-growing market and brand-new rules and requirements from industry-leading customers, integrated cross-functional teams and outside resources, and improved production efficiency and yield for the new product through systematic collaboration and process optimization','Turned new materials, processes and cross-industry methods into buildable products: worked on Under Armour Speedform and co-developed 3D-printed footwear, helping bring it into mass production'],
+['Worked with NVIDIA and Apple on server programs','Worked with Diebold Nixdorf and GE Healthcare','Under Armour Innovation customer contact','Handled RFQs for Klipsch and Delphi','Overseas assignment experience']],
+L:['Customer needs become roadmaps and solutions','Once specs are set, cost and quotes can be accurate','Confirm it can be built before quoting','Validation passes, then mass production','New technology must fit into the system','New technology answers real customer needs'],
+J:{au:['AUO Display Plus','May 2024–Present'],ing:['Ingrasys','May 2022–May 2024'],ctr:['Coretronic','Mar 2017–May 2022'],pc:['Pou Chen','May 2013–Mar 2017'],es:['E.SUN Bank','Nov 2012–May 2013'],zy:['Zylux','Aug 2010–May 2012']}
+};
+const U={zh:{t:'履歷島｜洪斌翔',hl:'<b>客戶與專案經理｜NPI｜AI Server 與資料中心硬體｜先進技術｜成本與報價</b><span class="chip">Lv.16・16 年資歷</span><span class="chip">9 類產品</span><span class="chip">外派經驗</span><span class="chip">美國與歐洲客戶</span>',ov:'海外據點透過港口與本島貿易：代表外派經驗，也是對接美國與歐洲客戶的窗口。',h1:'履歷<i>島</i>｜洪斌翔',sub:'中央首都統籌全局，六座衛星城鎮以道路與橋梁相連。形式致敬 HEART 政策島。',tabs:['全景','城鎮介紹','建設歷程','產品'],ph:'搜尋，例如：報價、NPI',clr:'清除篩選 ✕',th:'點一份工作，回到全景看它點亮了哪些城鎮。',ft:'這是原型，內容整理自本人履歷。協作線的說明是對能力之間關係的解讀，並非正式職務描述。',wt:'歡迎來到履歷王國',w1:'點任一座城鎮，看這項能力背後做過哪些事。城鎮之間的道路與橋梁是「協作線」，所有道路也都通往中央首都。',w2:(a,b,c)=>`共 ${a} 座城鎮、${b} 個細項、${c} 條協作線。找找城堡裡的國王，以及路上的村民與衛兵。`,cl:'協作線',col:'：',ctr:'這裡是中央首都，與每一座衛星城鎮都有道路相連。'},
+en:{t:'Resume Island | Sean Hung',hl:'<b>Customer & Program Manager | NPI | AI Server & Data Center Hardware | Advanced Technology | Cost & Quotation</b><span class="chip">Lv.16 · 16 years</span><span class="chip">9 product types</span><span class="chip">Overseas assignment</span><span class="chip">U.S. & European customers</span>',ov:'The overseas base trades with the mainland through its port. It reflects overseas assignment experience and is the window to U.S. and European customers.',h1:'Resume <i>Island</i> | Sean Hung',sub:'A central capital runs the show, linked to six satellite towns by roads and bridges. Inspired by HEART Policy Island.',tabs:['Map','Town Guide','Build History','Products'],ph:'Search, e.g. quotation, NPI',clr:'Clear filter ✕',th:'Pick a job to return to the map and see which towns it lights up.',ft:'A prototype built from my resume. The collaboration lines are my interpretation of how skills connect, not formal job descriptions.',wt:'Welcome to the Kingdom',w1:'Tap a town to see what was done behind each skill. Roads and bridges between towns are collaboration lines, and every road leads to the capital.',w2:(a,b,c)=>`${a} towns, ${b} items, ${c} collaboration lines. Find the king in the castle, plus villagers and guards on the roads.`,cl:'Collaboration lines',col:': ',ctr:'This is the capital, connected by road to every satellite town.'}};
+const N=o=>lang==='en'?EN.n[o.k]:o.n;
+const IT=(o,i)=>lang==='en'?EN.it[o.k][i]:o.it[i][1];
+const JS=j=>!J[j]?'':lang==='en'?EN.J[j][0]:J[j][0].split(' ')[0];
+function panel(){
+ const p=$('#panel'),u=U[lang];
+ if(sel<0){p.innerHTML=`<h2>${u.wt}</h2><p class="m">${u.w1}</p><p class="m">${u.w2(I.length,tot,L.length)}</p>`;return}
+ const o=I[sel],ls=L.map((l,i)=>[l,i]).filter(a=>a[0][0]===sel||a[0][1]===sel);
+ p.innerHTML=`<h2>${o.e} ${N(o)}</h2><p class="m">${lang==='en'?EN.d[o.k]:o.d}</p><ul>${o.it.map((t,i)=>`<li><span class="chip">${JS(t[0])}</span>${IT(o,i)}</li>`).join('')}</ul><h3>${u.cl}</h3>`+
+ (ls.map(a=>{const l=a[0],k=l[0]===sel?l[1]:l[0];return `<p class="lk">↔ <a data-g="${k}">${N(I[k])}</a>${u.col}${lang==='en'?EN.L[a[1]]:l[2]}</p>`}).join('')||`<p class="m">${sel===7?u.ov:u.ctr}</p>`);
+}
+function lists(){
+ $('#grid').innerHTML=I.map(o=>`<div class="card"><b>${o.e} ${N(o)}</b><ul>${o.it.map((t,i)=>`<li><span class="chip">${JS(t[0])}</span>${IT(o,i)}</li>`).join('')}</ul></div>`).join('');
+ $('#rows').innerHTML=Object.keys(J).map(j=>`<div class="row" data-j="${j}"><b>${lang==='en'?EN.J[j][0]:J[j][0]}</b><small>${lang==='en'?EN.J[j][1]:J[j][1]}</small><div>${I.map(o=>[o,cnt(o,j)]).filter(a=>a[1]).map(a=>`<span class="chip" style="background:var(--c${a[0].k})">${a[0].e} ${N(a[0])} ×${a[1]}</span>`).join('')}</div></div>`).join('');
+}
+function setLang(l){
+ lang=l;const u=U[l];document.documentElement.lang=l==='en'?'en':'zh-Hant';document.title=u.t;
+ $('#h1').innerHTML=u.h1;$('#hl').innerHTML=u.hl;$('#sub').textContent=u.sub;
+ ['map','list','time','prod'].forEach((v,i)=>document.querySelector(`[data-v="${v}"]`).textContent=u.tabs[i]);
+ $('#q').placeholder=u.ph;$('#clr').textContent=u.clr;$('#th').textContent=u.th;$('#ft').textContent=u.ft;$('#lg').textContent=l==='en'?'中文':'EN';
+ lists();draw();
+}
+const cnt=(o,j)=>o.it.filter(t=>t[0]===j).length;
+const hit=(o,s)=>[o.n,...o.it.map(t=>t[1]),EN.n[o.k],...EN.it[o.k]].some(x=>x.toLowerCase().includes(s));
+const dim=o=>(jobF&&!cnt(o,jobF))||(qs&&!hit(o,qs));
+const hex=(x,y,r)=>[0,1,2,3,4,5].map(a=>(x+r*Math.cos(a*Math.PI/3)).toFixed(1)+','+(y+r*Math.sin(a*Math.PI/3)).toFixed(1)).join(' ');
+const RF=['#d4ac0d','#c0392b','#e08a2e','#2e86c1','#8e44ad','#16a085','#c0392b'];
+const PP=[[0,0],[0,-175],[165,-88],[165,88],[0,175],[-165,88],[-165,-88],[440,0]];
+I.forEach((o,i)=>{o.x=PP[i][0];o.y=PP[i][1]});
+const px=(x,y,w,h,f)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${f}"/>`;
+const tree=(x,y)=>px(x-1,y+5,3,5,'#6b4423')+px(x-6,y-4,12,10,'var(--t1)')+px(x-4,y-8,8,4,'var(--t1)')+px(x-4,y-3,4,4,'var(--t2)');
+const house=(x,y,rf)=>`<g transform="translate(${x},${y})">`+px(-7,-1,14,10,'#f1e3c2')+px(-7,9,14,1,'#a08a62')+px(-9,-5,18,4,rf)+px(-7,-8,14,3,rf)+px(-4,-10,8,2,rf)+px(-2,3,4,6,'#6b4423')+px(3,2,3,3,'#7fb4d6')+'</g>';
+const TR=[[65,-105],[-65,-105],[65,105],[-65,105],[30,-70],[-30,-70],[30,70],[-30,70],[65,0],[-65,0],[192,0],[-192,0],[100,-190],[-100,-190],[100,190],[-100,190]];
+const person=(b,h,x)=>px(-3,-10,6,2,h)+px(-3,-8,6,4,'#f6d2b0')+px(-3,-4,6,6,b)+px(-3,2,2,3,'#334')+px(1,2,2,3,'#334')+(x||'');
+const king=()=>px(-4,-4,8,8,'#c0392b')+person('#f5f0e6','#5a3a22',px(-3,-13,6,3,'#f1c40f')+px(-3,-15,2,2,'#f1c40f')+px(1,-15,2,2,'#f1c40f'));
+const guard=()=>person('#9aa0aa','#7d848f',px(-3,-10,6,3,'#7d848f')+px(5,-14,1,18,'#caa66a')+px(4,-17,3,3,'#d9d9e0'));
+const mv=(d,t,p)=>`<g>${p}<animateMotion dur='${t}s' repeatCount='indefinite' path='${d}' keyPoints='0;1;0' keyTimes='0;.5;1' calcMode='linear'/></g>`;
+const br=(x,y)=>px(x-11,y-9,22,18,'#8b5a2b')+px(x-11,y-9,22,2,'#5a3a22')+px(x-11,y+7,22,2,'#5a3a22')+px(x-6,y-7,2,14,'#6b4423')+px(x,y-7,2,14,'#6b4423')+px(x+6,y-7,2,14,'#6b4423');
+const tw=(x,y)=>px(x-10,y-10,20,20,'#8a8a96')+px(x-10,y-14,5,5,'#8a8a96')+px(x-2,y-14,5,5,'#8a8a96')+px(x+5,y-14,5,5,'#8a8a96')+`<path d='M${x-12} ${y-14}L${x} ${y-30}L${x+12} ${y-14}Z' fill='#c0392b'/>`;
+const cap=o=>{const n=o.it.length;return px(-58,-58,116,116,'#7d7d88')+px(-54,-54,108,108,'#9a9aa4')+px(-50,-50,100,100,'#cdbf9a')+px(-22,-48,44,30,'#b4b4c0')+px(-28,-54,12,40,'#a4a4b0')+px(16,-54,12,40,'#a4a4b0')+`<path d='M-30 -54L-22 -66L-14 -54Z' fill='#c0392b'/><path d='M14 -54L22 -66L30 -54Z' fill='#c0392b'/>`+px(-5,-34,10,16,'#4a3320')+px(-24,-42,4,6,'#2c3e50')+px(20,-42,4,6,'#2c3e50')+o.it.map((t,i)=>house((i-(n-1)/2)*20,24,'#c0392b')).join('')+px(-10,50,20,8,'#4a3320')+px(-10,-58,20,8,'#4a3320')+tw(-58,-58)+tw(58,-58)+tw(-58,58)+tw(58,58)};
+const PR=[{e:'🔊',zh:'多媒體音響',en:'Multimedia audio',j:'zy',a:1,b:4},{e:'👟',zh:'球鞋',en:'Athletic shoes',j:'pc',a:6,b:4},{e:'💰',zh:'企業放款',en:'Corporate loans',j:'es',a:1,b:3},{e:'🖥️',zh:'顯示器',en:'Displays',j:'ctr',a:5,b:2},{e:'🧾',zh:'POS 機',en:'POS terminals',j:'ctr',a:5,b:1},{e:'🌧️',zh:'戶外防水機',en:'Outdoor waterproof AIO',j:'au',a:2,b:1},{e:'☕',zh:'烘豆機',en:'Coffee roasters',j:'ctr',a:6,b:3},{e:'🪞',zh:'反射式顯示器',en:'Reflective displays',j:'au',a:6,b:2},{e:'🤖',zh:'AI server board',en:'AI server boards',j:'ing',a:4,b:3}];
+const route=(a,b)=>`M${I[a].x},${I[a].y}H0V${I[b].y}H${I[b].x}`;
+const trade=()=>PR.map((p,i)=>`<text font-size='12' text-anchor='middle' dy='4'><animateMotion dur='${12+i%4}s' begin='-${i*1.3}s' repeatCount='indefinite' path='${route(p.a,p.b)}'/>${p.e}</text>`).join('');
+function prods(){$('#pg').innerHTML=PR.map(p=>`<div class='card'><b>${p.e} ${lang==='en'?p.en:p.zh}</b><p class='m'>${p.j?`<span class='chip'>${JS(p.j)}</span>`:''}${N(I[p.a])} ⇄ ${N(I[p.b])}</p></div>`).join('')}
+const port=()=>px(200,-8,34,16,'#8b5a2b')+px(204,-8,2,16,'#6b4423')+px(214,-8,2,16,'#6b4423')+px(224,-8,2,16,'#6b4423')+px(188,-22,12,12,'#a9794a')+px(190,-22,8,2,'#6b4423')+`<text x='217' y='-12' font-size='12' text-anchor='middle'>⚓</text>`;
+const boat=()=>px(-8,2,16,5,'#6b4423')+px(-1,-8,2,10,'#f1e3c2')+px(1,-8,7,7,'#f5f0e6')+px(-6,-2,5,4,'#e0b878');
+const flag=(x,y,t)=>px(x-1,y,1,16,'#5a3a22')+(t?px(x,y,14,9,'#c0392b')+px(x,y+1,14,1,'#fff')+px(x,y+3,14,1,'#fff')+px(x,y+5,14,1,'#fff')+px(x,y+7,14,1,'#fff')+px(x,y,6,5,'#2c3e8c'):px(x,y,14,9,'#1f3f9a')+px(x+6,y+1,2,1,'#f1c40f')+px(x+3,y+4,2,1,'#f1c40f')+px(x+9,y+4,2,1,'#f1c40f')+px(x+6,y+7,2,1,'#f1c40f'));
+const isl=o=>`<path d='M-68-62H68V-56H76V56H68V62H-68V56H-76V-56H-68Z' fill='#e6d3a0'/><path d='M-62-56H62V-50H70V50H62V56H-62V50H-70V-50H-62Z' fill='url(#gr)'/>`+tree(-56,-36)+tree(58,36)+flag(-8,-46,1)+flag(14,-46,0)+o.it.map((t,i)=>house(i<3?(i-1)*34:(i-3.5)*34,i<3?-4:24,'#2e86c1')).join('')+px(-92,-8,34,16,'#8b5a2b')+px(-88,-8,2,16,'#6b4423')+px(-78,-8,2,16,'#6b4423')+px(-68,-8,2,16,'#6b4423')+`<text x='-75' y='-12' font-size='12' text-anchor='middle'>⚓</text>`;
+const TR2=[[192,0],[-192,0],[100,-190],[-100,-190],[100,190],[-100,190],[-172,-176],[172,-176],[-172,176],[172,176]];
+const K={zh:{kn:'國王 洪斌翔',sn:'下一句 ▶',sd:'開始參觀 ✓',kl:['歡迎來到履歷王國！我是洪斌翔，這座王國的國王。','我有 16 年資歷，從鞋業、顯示器、伺服器一路走到先進技術，專長是把客戶需求變成能量產的產品。','六座城鎮各有專長，道路與橋梁都通往首都；東邊的港口，連到美國與歐洲的客戶。','請隨意參觀。想知道我做過哪些產品，看看路上的商隊，或點上方的「產品」。']},en:{kn:'King Sean Hung',sn:'Next ▶',sd:'Start exploring ✓',kl:['Welcome to the Resume Kingdom! I am Sean Hung, king of this land.','I have 16 years of experience, from footwear to displays to servers to advanced technology. I turn customer needs into products that can be built at scale.','Six towns each have their own specialty. Every road and bridge leads to the capital, and the eastern port connects to customers in the U.S. and Europe.','Look around. To see what I have built, watch the caravans on the roads or open Products above.']}};
+let spI=0,spTm=0;
+function typeLine(){const t=K[lang].kl[spI];let k=0;clearInterval(spTm);$('#spm').textContent='';spTm=setInterval(()=>{k++;$('#spm').textContent=t.slice(0,k);if(k>=t.length)clearInterval(spTm)},32);$('#spn').textContent=spI>=K[lang].kl.length-1?K[lang].sd:K[lang].sn}
+function speak(){spI=0;$('#sp').hidden=false;$('.sph').firstChild.nodeValue='👑 ';$('#spt').textContent=K[lang].kn;typeLine()}
+function nextSp(){if(spI>=K[lang].kl.length-1){closeSp();return}spI++;typeLine()}
+function closeSp(){clearInterval(spTm);$('#sp').hidden=true}
+const W=s=>[...s].reduce((a,c)=>a+(c.charCodeAt(0)>255?15:8.4),0);
+const SF="font-family='Noto Serif TC,Songti TC,serif'";
+const tree2=(x,y,sc)=>`<g transform='translate(${x},${y}) scale(${sc||1})'><ellipse cy='9' rx='9' ry='3' fill='#1a2a1a' opacity='.3'/><rect x='-1.8' width='3.6' height='9' rx='1.5' fill='#6b4a2b'/><circle cy='-3' r='9' fill='url(#tg)'/><circle cx='-5' r='6.5' fill='url(#tg)'/><circle cx='5' r='6.5' fill='url(#tg)'/><circle cx='-3' cy='-7' r='3' fill='#d3f29a' opacity='.45'/></g>`;
+const house2=(x,y,rf)=>`<g transform='translate(${x},${y})'><ellipse cy='9' rx='11' ry='3.5' fill='#1a2a1a' opacity='.3'/><rect x='-8' y='-3' width='16' height='12' rx='1.5' fill='url(#wl)'/><path d='M-11 -2L0 -12L11 -2Z' fill='${rf}'/><path d='M-11 -2L0 -12L0 -2Z' fill='#fff' opacity='.2'/><rect x='-2' y='3' width='4' height='6' rx='1' fill='#5a3a22'/><rect x='3' width='3.5' height='3.5' rx='.8' fill='#ffd978'><animate attributeName='opacity' values='1;.6;1' dur='${2+Math.abs(x)%3}s' repeatCount='indefinite'/></rect></g>`;
+const ban=(txt,y,fs)=>{const w=W(txt)*fs/15+30;return `<g transform='translate(0,${y})' style='pointer-events:none'><rect x='${-w/2}' y='-14' width='${w}' height='28' rx='14' fill='#1f2a44' stroke='#e8c46a' stroke-width='2' filter='url(#sh2)'/><rect x='${-w/2+4}' y='-11' width='${w-8}' height='10' rx='5' fill='#fff' opacity='.13'/><text y='${fs*.36}' text-anchor='middle' font-size='${fs}' font-weight='800' fill='#fff3cf' ${SF} style='paint-order:stroke;stroke:#0d1428;stroke-width:3px'>${txt}</text></g>`};
+const ppl=(b,h,acc)=>`<ellipse cy='6' rx='5' ry='1.8' fill='#1a2a1a' opacity='.35'/><g><animateTransform attributeName='transform' type='translate' values='0,0;0,-1.2;0,0' dur='.55s' repeatCount='indefinite'/><rect x='-3.5' y='-4' width='7' height='9' rx='3' fill='${b}'/><circle cy='-8' r='4' fill='#f6d2b0'/><path d='M-4.2 -8.5Q0 -15 4.2 -8.5Q0 -11 -4.2 -8.5Z' fill='${h}'/>${acc||''}</g>`;
+const king2=()=>`<g transform='scale(1.4)'><path d='M-6 -4L6 -4L8.5 7L-8.5 7Z' fill='#b3262f'/>`+ppl('#f5f0e6','#5a3a22',`<path d='M-4 -12L-4 -17L-2 -14L0 -18L2 -14L4 -17L4 -12Z' fill='#f1c40f' stroke='#b8860b' stroke-width='.5'/>`)+`</g><circle r='15' fill='#ffe9a0' opacity='.22' filter='url(#bl)'/><circle r='16' fill='transparent'/><text y='-30' text-anchor='middle' font-size='11'>💬<animate attributeName='opacity' values='1;.3;1' dur='1.4s' repeatCount='indefinite'/></text>`;
+const guard2=()=>ppl('#8b95a5','#6c7482',`<path d='M-4 -9Q0 -15 4 -9Z' fill='#6c7482'/><rect x='6' y='-14' width='1.2' height='20' fill='#caa66a'/><path d='M5.2 -14L6.6 -18L8 -14Z' fill='#e4e4ec'/>`);
+const mv2=(d,t,p,c)=>`<g${c?` class='${c}' style='cursor:pointer'`:''}>${p}<animateMotion dur='${t}s' repeatCount='indefinite' path='${d}' keyPoints='0;1;0' keyTimes='0;.5;1' calcMode='linear'/></g>`;
+const roof=(x,y,w,h,c)=>`<path d='M${x-w} ${y}L${x} ${y-h}L${x+w} ${y}Z' fill='${c}'/><path d='M${x-w} ${y}L${x} ${y-h}L${x} ${y}Z' fill='#fff' opacity='.2'/>`;
+const tow=(x,y,c)=>`<rect x='${x-10}' y='${y-14}' width='20' height='30' rx='4' fill='url(#st)'/>`+roof(x,y-12,14,22,c)+`<rect x='${x-2}' y='${y-6}' width='4' height='7' rx='1.5' fill='#ffd978'/>`;
+const cap2=o=>{const n=o.it.length;return `<rect x='-58' y='-58' width='116' height='116' rx='10' fill='url(#st)' class='pt' stroke='#7a7a88' stroke-width='2'/><rect x='-50' y='-50' width='100' height='100' rx='6' fill='#dccfa6'/><path d='M-50 0H50M-50 -25H50M-50 25H50M-25 -50V50M25 -50V50' stroke='#c4b583' stroke-width='1' opacity='.6'/><rect x='-26' y='-48' width='52' height='34' rx='3' fill='url(#st)'/>`+tow(-26,-30,'#2e6fb0')+tow(26,-30,'#2e6fb0')+roof(0,-48,18,18,'#b3262f')+`<path d='M-6 -14V-26Q0 -32 6 -26V-14Z' fill='#4a3320'/><rect x='-1' y='-72' width='1.6' height='24' fill='#5a3a22'/><path d='M.6 -72L12 -68L.6 -64Z' fill='#f1c40f'><animateTransform attributeName='transform' type='skewY' values='-6;6;-6' dur='1.6s' repeatCount='indefinite'/></path>`+o.it.map((t,i)=>house2((i-(n-1)/2)*20,26,'#c0392b')).join('')+`<path d='M-9 58V49Q0 41 9 49V58Z' fill='#3a2614'/>`+tow(-58,-58,'#b3262f')+tow(58,-58,'#b3262f')+tow(-58,58,'#b3262f')+tow(58,58,'#b3262f')};
+const dock=(x,y)=>`<rect x='${x}' y='${y}' width='34' height='16' rx='3' fill='#8b5a2b' filter='url(#sh2)'/><path d='M${x+8} ${y}V${y+16}M${x+17} ${y}V${y+16}M${x+26} ${y}V${y+16}' stroke='#5a3a22' stroke-width='1.2'/>`;
+const port2=()=>dock(200,-8)+`<rect x='186' y='-24' width='12' height='12' rx='2' fill='#a9794a'/><circle cx='198' cy='-16' r='8' fill='#ffd978' opacity='.5' filter='url(#bl)'/><text x='217' y='-12' font-size='12' text-anchor='middle'>⚓</text>`;
+const boat2=()=>`<ellipse cy='6' rx='10' ry='2.5' fill='#000' opacity='.25'/><path d='M-9 0H9L6 6H-6Z' fill='#6b4423'/><rect x='-.8' y='-10' width='1.6' height='10' fill='#e8d8b0'/><path d='M1 -10L9 -1H1Z' fill='#f7f2e4'/><rect x='-6' y='-3' width='5' height='3' rx='.8' fill='#e0b878'/>`;
+const isl2=o=>`<rect x='-76' y='-58' width='152' height='124' rx='30' fill='#c9b27a'/><rect x='-76' y='-64' width='152' height='124' rx='30' fill='#e9d8a6' class='pt'/><rect x='-68' y='-56' width='136' height='108' rx='24' fill='url(#gg)'/>`+tree2(-56,-34,1.1)+tree2(58,34,1.1)+tree2(60,-30)+flag(-8,-46,1)+flag(14,-46,0)+o.it.map((t,i)=>house2(i<3?(i-1)*34:(i-3.5)*34,i<3?-4:24,'#2e86c1')).join('')+dock(-92,-8)+`<text x='-75' y='-12' font-size='12' text-anchor='middle'>⚓</text>`;
+const br2=(x,y)=>`<g transform='translate(${x},${y})' filter='url(#sh2)'><rect x='-12' y='-9' width='24' height='18' rx='3' fill='#8b5a2b'/><path d='M-6 -9V9M0 -9V9M6 -9V9' stroke='#6b4423' stroke-width='1.4'/><rect x='-12' y='-10' width='24' height='3' rx='1.5' fill='#5a3a22'/><rect x='-12' y='7' width='24' height='3' rx='1.5' fill='#5a3a22'/></g>`;
+const IK="stroke='#2b1a10' stroke-linejoin='round'";
+const X0=30,X1=272,X2=346,X3=392,TT=X3-X0,pp=x=>((x-X0)/TT).toFixed(3);
+const tree3=(x,y,sc)=>`<g transform='translate(${x},${y}) scale(${sc||1})'><ellipse cy='10' rx='10' ry='3' fill='#1a2a1a' opacity='.3'/><rect x='-2' y='1' width='4' height='9' fill='#8a5a2e' ${IK} stroke-width='1.4'/><circle cx='-6' cy='1' r='7' fill='#3f9a40' ${IK} stroke-width='1.6'/><circle cx='6' cy='1' r='7' fill='#3f9a40' ${IK} stroke-width='1.6'/><circle cy='-4' r='10' fill='#55b84e' ${IK} stroke-width='1.8'/><path d='M-6 -9Q-1 -14 3 -10' stroke='#d2f59a' stroke-width='2.2' fill='none' stroke-linecap='round'/></g>`;
+const house3=(x,y,rf)=>`<g transform='translate(${x},${y})'><ellipse cy='10' rx='12' ry='3.5' fill='#1a2a1a' opacity='.3'/><rect x='-8.5' y='-3' width='17' height='13' fill='#fff1d0' ${IK} stroke-width='1.6'/><rect x='2' y='-3' width='6.5' height='13' fill='#e5cf9e' opacity='.7'/><path d='M-12 -2L0 -14L12 -2Z' fill='${rf}' ${IK} stroke-width='1.8'/><path d='M0 -14L12 -2H0Z' fill='#000' opacity='.18'/><rect x='-6' y='3' width='4' height='7' fill='#7a4a22' ${IK} stroke-width='1.2'/><rect x='2.5' y='1' width='4' height='4' fill='#ffd75e' ${IK} stroke-width='1'><animate attributeName='fill' values='#ffd75e;#fff0a8;#ffd75e' dur='${2+Math.abs(x)%3}s' repeatCount='indefinite'/></rect></g>`;
+const ppl3=(b,h,acc)=>`<ellipse cy='7' rx='5.5' ry='2' fill='#1a2a1a' opacity='.35'/><g><animateTransform attributeName='transform' type='translate' values='0,0;0,-1.2;0,0' dur='.55s' repeatCount='indefinite'/><rect x='-3.8' y='-4' width='7.6' height='9.5' rx='3' fill='${b}' ${IK} stroke-width='1.2'/><circle cy='-8.5' r='4.4' fill='#ffd9b5' ${IK} stroke-width='1.2'/><path d='M-4.6 -9Q0 -16 4.6 -9Q0 -12 -4.6 -9Z' fill='${h}' ${IK} stroke-width='1'/><circle cx='-1.6' cy='-8' r='.7' fill='#2b1a10'/><circle cx='1.6' cy='-8' r='.7' fill='#2b1a10'/>${acc||''}</g>`;
+const king3=()=>`<g transform='scale(1.4)'><path d='M-6.5 -4L6.5 -4L9 7.5L-9 7.5Z' fill='#c0262f' ${IK} stroke-width='1.2'/>`+ppl3('#f7f0e0','#5a3a22',`<path d='M-4.4 -13L-4.4 -18L-2.2 -15L0 -19L2.2 -15L4.4 -18L4.4 -13Z' fill='#ffd23a' ${IK} stroke-width='1'/>`)+`</g><circle r='16' fill='transparent'/><text y='-32' text-anchor='middle' font-size='12'>💬<animate attributeName='opacity' values='1;.3;1' dur='1.4s' repeatCount='indefinite'/></text>`;
+const guard3=()=>ppl3('#8b95a5','#6c7482',`<path d='M-4.4 -9Q0 -15 4.4 -9Z' fill='#7d8796' ${IK} stroke-width='1'/><rect x='6' y='-14' width='1.4' height='20' fill='#caa66a' ${IK} stroke-width='.8'/><path d='M5.2 -14L6.7 -19L8.2 -14Z' fill='#eee' ${IK} stroke-width='.8'/>`);
+const mvK=p=>`<g class='king' style='cursor:pointer'>${p}<animateMotion dur='52s' repeatCount='indefinite' path='M${X0},-6H${X3}' keyPoints='0;${pp(X1)};${pp(X1)};${pp(X2)};${pp(X2)};1;1;${pp(X2)};${pp(X2)};${pp(X1)};${pp(X1)};0' keyTimes='0;.18;.21;.27;.30;.42;.58;.70;.73;.79;.82;1' calcMode='linear'/></g>`;
+const mv3=(d,t,p)=>`<g style='pointer-events:none'>${p}<animateMotion dur='${t}s' repeatCount='indefinite' path='${d}' keyPoints='0;1;0' keyTimes='0;.5;1' calcMode='linear'/></g>`;
+const boat3=()=>`<ellipse cy='7' rx='11' ry='2.5' fill='#0b2a3d' opacity='.25'/><path d='M-10 0H10L7 7H-7Z' fill='#9b5e2e' ${IK} stroke-width='1.6'/><rect x='-.8' y='-11' width='1.6' height='11' fill='#2b1a10'/><path d='M1 -11L10 -1H1Z' fill='#fff' ${IK} stroke-width='1.3'/>`;
+const ban3=(txt,y,fs,c)=>{const w=W(txt)*fs/15+26;return `<g transform='translate(0,${y})' style='pointer-events:none'><rect x='${-w/2+3}' y='-13' width='${w}' height='28' fill='#2b1a10'/><rect x='${-w/2}' y='-16' width='${w}' height='28' fill='#fffaf0' stroke='#2b1a10' stroke-width='2.5'/><rect x='${-w/2}' y='-16' width='7' height='28' fill='${c}' stroke='#2b1a10' stroke-width='2.5'/><text x='3' y='${fs*.34-2}' text-anchor='middle' font-size='${fs}' font-weight='800' fill='#2b1a10' ${SF}>${txt}</text></g>`};
+const roof3=(x,y,w,h,c)=>`<path d='M${x-w} ${y}L${x} ${y-h}L${x+w} ${y}Z' fill='${c}' ${IK} stroke-width='2'/><path d='M${x} ${y-h}L${x+w} ${y}H${x}Z' fill='#000' opacity='.2'/>`;
+const tow3=(x,y,c)=>`<rect x='${x-10}' y='${y-14}' width='20' height='30' fill='#d8d8e2' ${IK} stroke-width='2'/><rect x='${x+2}' y='${y-14}' width='8' height='30' fill='#9a9aae' opacity='.55'/>`+roof3(x,y-12,14,22,c)+`<rect x='${x-2}' y='${y-6}' width='4' height='7' fill='#ffd75e' ${IK} stroke-width='1'/>`;
+const cap3=o=>{const n=o.it.length;return `<rect x='-58' y='-58' width='116' height='116' fill='#c9c9d6' class='pt' ${IK} stroke-width='3'/><rect x='-50' y='-50' width='100' height='100' fill='#e6d8aa' ${IK} stroke-width='1.5'/><rect x='-26' y='-48' width='52' height='34' fill='#d8d8e2' ${IK} stroke-width='2'/>`+tow3(-26,-30,'#2e6fb0')+tow3(26,-30,'#2e6fb0')+roof3(0,-48,18,18,'#c0262f')+`<path d='M-6 -14V-26Q0 -32 6 -26V-14Z' fill='#4a3320' ${IK} stroke-width='1.5'/><rect x='-1' y='-72' width='1.8' height='24' fill='#2b1a10'/><path d='M.8 -72L13 -67L.8 -62Z' fill='#ffd23a' ${IK} stroke-width='1.2'><animateTransform attributeName='transform' type='skewY' values='-6;6;-6' dur='1.6s' repeatCount='indefinite'/></path>`+o.it.map((t,i)=>house3((i-(n-1)/2)*20,26,'#d6402f')).join('')+`<path d='M-9 58V49Q0 41 9 49V58Z' fill='#3a2614' ${IK} stroke-width='1.5'/><path d='M50 8V-4Q58 -12 66 -4V8Z' fill='#3a2614' ${IK} stroke-width='1.5'/>`+tow3(-58,-58,'#c0262f')+tow3(58,-58,'#c0262f')+tow3(-58,58,'#c0262f')+tow3(58,58,'#c0262f')};
+const dock3=(x,y)=>`<rect x='${x}' y='${y}' width='34' height='16' fill='#b07a40' ${IK} stroke-width='2'/><path d='M${x+8} ${y}V${y+16}M${x+17} ${y}V${y+16}M${x+26} ${y}V${y+16}' stroke='#2b1a10' stroke-width='1.2'/>`;
+const isl3=o=>`<rect x='-76' y='-58' width='152' height='124' rx='30' fill='#b8894a' ${IK} stroke-width='3'/><rect x='-76' y='-64' width='152' height='124' rx='30' fill='#f1dca0' class='pt' ${IK} stroke-width='3'/><rect x='-66' y='-54' width='132' height='104' rx='22' fill='#8fe070' ${IK} stroke-width='2'/>`+tree3(-56,-34,1.1)+tree3(58,34,1.1)+tree3(60,-30)+flag(-8,-46,1)+flag(14,-46,0)+o.it.map((t,i)=>house3(i<3?(i-1)*34:(i-3.5)*34,i<3?-4:24,'#2e86c1')).join('')+dock3(-92,-8)+`<text x='-75' y='-12' font-size='12' text-anchor='middle'>⚓</text>`;
+const br3=(x,y)=>`<g transform='translate(${x},${y})'><rect x='-13' y='-9' width='26' height='18' fill='#b07a40' ${IK} stroke-width='2'/><path d='M-6 -9V9M0 -9V9M6 -9V9' stroke='#2b1a10' stroke-width='1.2'/><rect x='-13' y='-11' width='26' height='3.5' fill='#7a4a22' ${IK} stroke-width='1.2'/><rect x='-13' y='7.5' width='26' height='3.5' fill='#7a4a22' ${IK} stroke-width='1.2'/></g>`;
+const TR3=[[40,-100],[-40,-100],[40,100],[-40,100],[-225,0],[-225,-170],[-225,170],[225,-175],[225,175],[110,-230],[-110,-230],[110,230],[-110,230],[-120,0],[225,-35],[225,35]];
+const OL='#3a2615',OS=`stroke='#3a2615' stroke-linejoin='round'`;
+const wallT=(x,y,w,h,c)=>`<rect x='${x}' y='${y}' width='${w}' height='${h}' fill='${c}' ${OS} stroke-width='1'/><path d='M${x} ${y+h*.33}H${x+w}M${x} ${y+h*.66}H${x+w}' stroke='#000' opacity='.15' stroke-width='.7'/>`;
+const rf4=(x,y,w,h,c)=>`<path d='M${x-4} ${y}L${x+w*.12} ${y-h}H${x+w*.88}L${x+w+4} ${y}Z' fill='${c}' ${OS} stroke-width='1.1'/><path d='M${x+w*.12} ${y-h*.5}H${x+w*.88}M${x+2} ${y-h*.2}H${x+w-2}' stroke='#000' opacity='.22' stroke-width='.8'/>`;
+const cone=(x,y,w,h,c)=>`<path d='M${x-w/2} ${y}L${x} ${y-h}L${x+w/2} ${y}Z' fill='${c}' ${OS} stroke-width='1'/><path d='M${x} ${y-h}L${x+w/2} ${y}H${x}Z' fill='#000' opacity='.2'/><path d='M${x-w/4} ${y-h*.4}L${x-1} ${y-h*.85}' stroke='#fff' opacity='.4' stroke-width='1.2'/>`;
+const dome=(x,y,r,c)=>`<path d='M${x-r} ${y}A${r} ${r} 0 0 1 ${x+r} ${y}Z' fill='${c}' ${OS} stroke-width='1'/><ellipse cx='${x-r*.35}' cy='${y-r*.55}' rx='${r*.25}' ry='${r*.14}' fill='#fff' opacity='.55'/><path d='M${x} ${y-r}V${y-r-6}' stroke='#3a2615' stroke-width='1'/>`;
+const flg=(x,y,c)=>`<rect x='${x}' y='${y}' width='1.2' height='16' fill='#3a2615'/><path d='M${x+1.2} ${y}L${x+11} ${y+3}L${x+1.2} ${y+6}Z' fill='${c}' stroke='#3a2615' stroke-width='.6'><animateTransform attributeName='transform' type='skewY' values='-6;6;-6' dur='1.6s' repeatCount='indefinite'/></path>`;
+const crate=(x,y)=>`<rect x='${x}' y='${y}' width='7' height='6' fill='#b98a52' ${OS} stroke-width='.8'/><path d='M${x} ${y}L${x+7} ${y+6}M${x+7} ${y}L${x} ${y+6}' stroke='#3a2615' stroke-width='.5'/>`;
+const barrel=(x,y)=>`<ellipse cx='${x}' cy='${y}' rx='3.4' ry='4' fill='#9a6a38' ${OS} stroke-width='.8'/><path d='M${x-3} ${y-1}H${x+3}M${x-3} ${y+1.5}H${x+3}' stroke='#3a2615' stroke-width='.5'/>`;
+const archD=(x,y)=>`<path d='M${x-4} ${y}V${y-8}Q${x} ${y-13} ${x+4} ${y-8}V${y}Z' fill='#6b4423' stroke='#3a2615' stroke-width='.8'/>`;
+const smoke=x=>[0,1,2].map(i=>`<circle cx='${x}' cy='-54' r='3' fill='#eee' opacity='0'><animate attributeName='cy' values='-54;-76' dur='3s' begin='-${i}s' repeatCount='indefinite'/><animate attributeName='opacity' values='.7;0' dur='3s' begin='-${i}s' repeatCount='indefinite'/></circle>`).join('');
+const fl4=(x,y)=>['#ff6b9a','#ffd23a','#a77bff','#ff9a3a'].map((c,i)=>`<circle cx='${x+i*5-6}' cy='${y+(i%2)*4}' r='1.8' fill='${c}'/>`).join('');
+const tree4=(x,y,s)=>`<g transform='translate(${x},${y}) scale(${s||1})'><ellipse cy='10' rx='11' ry='3.5' fill='#0e2a14' opacity='.35'/><rect x='-2' y='1' width='4' height='9' fill='#7a4f2a'/><circle cx='-6' r='7.5' fill='#2f8a3a'/><circle cx='6' r='7.5' fill='#2f8a3a'/><circle cy='-5' r='10' fill='#47b04a' stroke='#1f5a2a' stroke-width='.8'/><circle cx='-3' cy='-8' r='5' fill='#86dc60' opacity='.7'/><circle cx='4' cy='-2' r='3' fill='#2a7a34' opacity='.5'/></g>`;
+const h4=(x,y,rc)=>`<g transform='translate(${x},${y}) scale(.9)'><ellipse cy='10' rx='13' ry='3.5' fill='#0e2a14' opacity='.35'/><rect x='-9' y='-4' width='18' height='14' fill='#dcbc8c' ${OS} stroke-width='.9'/><path d='M-9 1H9M-9 6H9' stroke='#a98a5a' stroke-width='.6'/><path d='M-13 -3L-6 -13H6L13 -3Z' fill='${rc}' ${OS} stroke-width='1'/><path d='M-9 -6H9M-11 -9H11' stroke='#000' opacity='.2' stroke-width='.7'/><rect x='-3' y='3' width='5' height='7' rx='2.5' fill='#6b4423'/><rect x='4' width='4' height='4' fill='#ffd75e' stroke='#3a2615' stroke-width='.7'><animate attributeName='fill' values='#ffd75e;#fff0a8;#ffd75e' dur='${2+Math.abs(x)%3}s' repeatCount='indefinite'/></rect></g>`;
+const ch=(b,h,acc,sc)=>`<g transform='scale(${sc||1})'><ellipse cy='7' rx='5' ry='1.8' fill='#0e2a14' opacity='.4'/><g><animateTransform attributeName='transform' type='translate' values='0,0;0,-1.3;0,0' dur='.5s' repeatCount='indefinite'/><rect x='-3' y='-2' width='6' height='7' rx='2' fill='${b}' stroke='#3a2615' stroke-width='.8'/><rect x='-2.6' y='4.5' width='2' height='3' fill='#4a3320'/><rect x='.6' y='4.5' width='2' height='3' fill='#4a3320'/><circle cy='-6.5' r='4.6' fill='#ffd9b5' stroke='#3a2615' stroke-width='.8'/><path d='M-4.8 -7Q0 -14 4.8 -7Q3 -9 0 -9Q-3 -9 -4.8 -7Z' fill='${h}' stroke='#3a2615' stroke-width='.7'/><circle cx='-1.7' cy='-6' r='.8' fill='#3a2615'/><circle cx='1.7' cy='-6' r='.8' fill='#3a2615'/>${acc||''}</g></g>`;
+const king4=()=>`<circle r='20' fill='#ffe27a' opacity='.35' filter='url(#bl)'><animate attributeName='opacity' values='.2;.5;.2' dur='2s' repeatCount='indefinite'/></circle><g transform='scale(2.2)'><path d='M-5.5 -2L5.5 -2L8 8L-8 8Z' fill='#c0262f' stroke='#3a2615' stroke-width='.7'><animate attributeName='d' values='M-5.5 -2L5.5 -2L8 8L-8 8Z;M-5.5 -2L5.5 -2L10 8L-6 8Z;M-5.5 -2L5.5 -2L8 8L-8 8Z' dur='1.2s' repeatCount='indefinite'/></path></g>`+ch('#f7f0e0','#6a4a2a',`<path d='M-4 -11L-4 -16L-2 -13L0 -17L2 -13L4 -16L4 -11Z' fill='#ffd23a' stroke='#3a2615' stroke-width='.7'/>`,2.2)+`<circle r='22' fill='transparent'/><text y='-44' text-anchor='middle' font-size='14'>💬<animate attributeName='opacity' values='1;.3;1' dur='1.4s' repeatCount='indefinite'/></text>`;
+const guard4=()=>ch('#7d8796','#6c7482',`<path d='M-4.8 -7Q0 -15 4.8 -7Z' fill='#9aa5b4' stroke='#3a2615' stroke-width='.8'/><rect x='6' y='-12' width='1.4' height='20' fill='#caa66a'/><path d='M5.2 -12L6.7 -17L8.2 -12Z' fill='#eee' stroke='#3a2615' stroke-width='.6'/>`);
+const mvK2=p=>`<g class='king' style='cursor:pointer'>${p}<animateMotion dur='52s' repeatCount='indefinite' path='M${X0},-8H${X3}' keyPoints='0;${pp(X1)};${pp(X1)};${pp(X2)};${pp(X2)};1;1;${pp(X2)};${pp(X2)};${pp(X1)};${pp(X1)};0' keyTimes='0;.18;.21;.27;.30;.42;.58;.70;.73;.79;.82;1' calcMode='linear'/></g>`;
+const boat4=()=>`<ellipse cy='7' rx='12' ry='2.5' fill='#0b2a3d' opacity='.28'/><path d='M-12 0H12L8 8H-8Z' fill='#8a5228' ${OS} stroke-width='1.3'/><rect x='-.8' y='-14' width='1.6' height='14' fill='#3a2615'/><path d='M1 -14Q12 -7 1 -1Z' fill='#f7f1e3' ${OS} stroke-width='.9'/><path d='M-1 -14L-7 -16L-1 -18Z' fill='#e0412f'/>`;
+const ship=s=>`<g transform='scale(${s||1})'><ellipse cy='9' rx='26' ry='4' fill='#0b2a3d' opacity='.3'/><path d='M-24 0H24L18 10H-18Z' fill='#7a4a22' ${OS} stroke-width='1.3'/><rect x='-1' y='-32' width='2' height='32' fill='#3a2615'/><rect x='-15' y='-24' width='2' height='24' fill='#3a2615'/><rect x='13' y='-24' width='2' height='24' fill='#3a2615'/><path d='M1 -32Q13 -18 1 -4Z' fill='#f7f1e3' ${OS} stroke-width='.9'/><path d='M-13 -24Q-3 -13 -13 -2Z' fill='#f7f1e3' ${OS} stroke-width='.9'/><path d='M15 -24Q23 -13 15 -2Z' fill='#f7f1e3' ${OS} stroke-width='.9'/><path d='M-1 -32L-9 -35L-1 -38Z' fill='#e0412f'/></g>`;
+const cart=()=>`<ellipse cy='6' rx='12' ry='2' fill='#0e2a14' opacity='.3'/><rect x='-9' y='-4' width='14' height='7' fill='#8a5a2e' stroke='#3a2615' stroke-width='.8'/><circle cx='-5' cy='4' r='2.6' fill='#5a3a22' stroke='#3a2615' stroke-width='.6'/><circle cx='2' cy='4' r='2.6' fill='#5a3a22' stroke='#3a2615' stroke-width='.6'/><ellipse cx='10' cy='0' rx='5' ry='3.2' fill='#a8723a' stroke='#3a2615' stroke-width='.7'/><circle cx='15' cy='-3' r='2.4' fill='#a8723a' stroke='#3a2615' stroke-width='.7'/>`;
+const ban4=(txt,y,fs)=>{const w=W(txt)*fs/15+28;return `<g transform='translate(0,${y})' style='pointer-events:none'><rect x='${-w/2+2}' y='-13' width='${w}' height='30' rx='3' fill='#000' opacity='.3'/><rect x='${-w/2}' y='-16' width='${w}' height='30' rx='3' fill='#7a5230' stroke='#3a2615' stroke-width='1.5'/><rect x='${-w/2+3}' y='-13' width='${w-6}' height='24' rx='2' fill='#f5e6c0' stroke='#b8935a' stroke-width='1'/><text y='${fs*.35-2}' text-anchor='middle' font-size='${fs}' font-weight='800' fill='#3b2412' ${SF}>${txt}</text></g>`};
+const HERO={
+1:()=>wallT(-32,-28,64,20,'#ecd9b0')+rf4(-32,-28,64,12,'#c8512a')+dome(-22,-30,9,'#f0912f')+dome(22,-30,9,'#f0912f')+wallT(-8,-46,16,20,'#e3caa0')+cone(0,-46,22,16,'#2f5fc4')+`<path d='M-30 -9H30V-4H-30Z' fill='#d94a3a'/><path d='M-24 -9V-4M-12 -9V-4M0 -9V-4M12 -9V-4M24 -9V-4' stroke='#fff' stroke-width='4'/>`+archD(0,-9)+flg(-30,-52,'#a77bff')+flg(20,-52,'#ff9a3a'),
+2:()=>wallT(-38,-28,76,20,'#b8b4aa')+rf4(-38,-28,76,14,'#5a5f6e')+wallT(-46,-46,14,38,'#a9a69c')+cone(-39,-46,20,15,'#4a5062')+wallT(32,-46,14,38,'#a9a69c')+cone(39,-46,20,15,'#4a5062')+archD(-14,-8)+archD(0,-8)+archD(14,-8)+flg(-2,-52,'#c0262f'),
+3:()=>wallT(-34,-28,68,20,'#a8a49a')+rf4(-34,-28,68,12,'#6a6f7c')+wallT(14,-46,18,20,'#b4b0a6')+cone(23,-46,22,13,'#4a5062')+`<text x='23' y='-33' font-size='9' text-anchor='middle'>🪙</text>`+crate(-34,-14)+crate(-27,-14)+crate(-30,-20)+barrel(34,-11)+barrel(40,-9)+archD(-6,-8),
+4:()=>wallT(-34,-28,68,20,'#b9633f')+`<path d='M-34 -28V-38L-22 -28V-38L-10 -28V-38L2 -28V-38L14 -28Z' fill='#7a7f8c' stroke='#3a2615' stroke-width='1'/><rect x='18' y='-52' width='8' height='26' fill='#8a4a3a' stroke='#3a2615' stroke-width='1'/>`+smoke(22)+`<text x='-12' y='-13' font-size='10' text-anchor='middle'>⚙️</text>`+archD(10,-8)+crate(-34,-6)+barrel(34,-9),
+5:()=>wallT(-32,-28,64,20,'#6a4aa0')+cone(-24,-28,20,14,'#8a5ad0')+cone(24,-28,20,14,'#8a5ad0')+`<circle cx='0' cy='-46' r='16' fill='#6ee7ff' opacity='.3' filter='url(#bl)'/><path d='M0 -62L8 -46L0 -30L-8 -46Z' fill='#6ee7ff' stroke='#2b1a60' stroke-width='1'><animate attributeName='opacity' values='1;.6;1' dur='2s' repeatCount='indefinite'/></path><path d='M-22 -46L-16 -36L-22 -26L-28 -36Z' fill='#9be8ff' stroke='#2b1a60' stroke-width='1'/><path d='M22 -46L28 -36L22 -26L16 -36Z' fill='#9be8ff' stroke='#2b1a60' stroke-width='1'/>`+archD(0,-8),
+6:()=>wallT(-34,-26,68,18,'#c9a26b')+dome(0,-26,20,'#7ec8f0')+`<path d='M-20 -26Q0 -50 20 -26M-10 -26Q0 -46 10 -26M0 -46V-26' stroke='#3a2615' stroke-width='.8' fill='none' opacity='.6'/><text y='-40' font-size='11' text-anchor='middle'>💡</text><rect x='-40' y='-34' width='6' height='26' fill='#b8892f' stroke='#3a2615' stroke-width='1'/><rect x='34' y='-34' width='6' height='26' fill='#b8892f' stroke='#3a2615' stroke-width='1'/>`+archD(0,-8),
+7:()=>wallT(-44,-26,38,18,'#ecd9b0')+rf4(-44,-26,38,14,'#2f6fd0')+wallT(6,-26,38,18,'#ecd9b0')+rf4(6,-26,38,14,'#2f6fd0')+flg(-48,-46,'#c0262f')+flg(46,-46,'#2c3e8c')+archD(-25,-8)+archD(25,-8)};
+const plot4=o=>{const n=o.it.length;
+ const hs=o.it.map((t,i)=>{const r=i>3?1:0,c=i%4,cols=Math.min(4,n-4*r);return h4((c-(cols-1)/2)*25,r*22+22,RF[o.k])}).join('');
+ return `<rect x='-56' y='-44' width='112' height='112' rx='22' fill='url(#rk)' stroke='#3a2615' stroke-width='1.5'/><path d='M-44 20V50M-20 24V56M10 22V58M36 20V52' stroke='#000' opacity='.2' stroke-width='1.2'/><rect x='-56' y='-56' width='112' height='112' rx='22' fill='url(#gp)' class='pt' stroke='#2d6a2a' stroke-width='2'/><ellipse cx='-20' cy='-36' rx='26' ry='8' fill='#c6f5a0' opacity='.5'/>`+fl4(-40,50)+fl4(26,52)+HERO[o.k]()+hs+tree4(-48,-14,.8)+tree4(48,-14,.8)};
+const cap4=o=>{const n=o.it.length;
+ const sp=(x,h,c)=>wallT(x-6,-6-h,12,h,'#ece6d8')+cone(x,-6-h,16,22,c)+`<rect x='${x-1.5}' y='${-h-1}' width='3' height='5' rx='1.5' fill='#ffd75e'/>`;
+ return `<rect x='-60' y='-46' width='120' height='116' rx='26' fill='url(#rk)' stroke='#3a2615' stroke-width='1.5'/><rect x='-60' y='-58' width='120' height='116' rx='26' fill='url(#gp)' class='pt' stroke='#2d6a2a' stroke-width='2'/><ellipse cx='0' cy='26' rx='52' ry='30' fill='#e0d2a8' stroke='#a98f5f' stroke-width='1.5'/><ellipse cx='0' cy='26' rx='40' ry='22' fill='none' stroke='#b9a878' stroke-width='1' stroke-dasharray='3 3'/>`+wallT(-58,2,10,44,'#cfc8b8')+wallT(48,2,10,44,'#cfc8b8')+cone(-53,2,14,12,'#c0262f')+cone(53,2,14,12,'#c0262f')+`<path d='M-14 -4H14L20 4H-20Z' fill='#d8d0c0' stroke='#3a2615' stroke-width='.8'/>`+wallT(-26,-34,52,28,'#ece6d8')+rf4(-44,-14,22,10,'#c0262f')+rf4(22,-14,22,10,'#c0262f')+wallT(-44,-14,22,10,'#e4dccb')+wallT(22,-14,22,10,'#e4dccb')+sp(-34,34,'#2f5fc4')+sp(-17,44,'#2f5fc4')+sp(0,54,'#2f5fc4')+sp(17,44,'#2f5fc4')+sp(34,34,'#2f5fc4')+`<path d='M-6 -6V-20Q0 -27 6 -20V-6Z' fill='#6b4423' stroke='#3a2615' stroke-width='1'/>`+flg(-2,-72,'#ff7a2a')+flg(15,-62,'#ff7a2a')+`<ellipse cx='0' cy='26' rx='10' ry='4.5' fill='#9fd8ee' stroke='#8a8a98' stroke-width='1.2'/><rect x='-1.5' y='14' width='3' height='12' fill='#cfe8f2'/><circle cx='0' cy='13' r='2.5' fill='#cfe8f2'><animate attributeName='cy' values='13;9;13' dur='1.4s' repeatCount='indefinite'/></circle>`+o.it.map((t,i)=>h4((i-(n-1)/2)*24,46-Math.pow((i-(n-1)/2)*24,2)/170,'#c0262f')).join('')};
+const isl4=o=>`<rect x='-76' y='-50' width='152' height='124' rx='34' fill='url(#rk)' stroke='#3a2615' stroke-width='1.5'/><rect x='-76' y='-62' width='152' height='124' rx='34' fill='#efdca4' class='pt' stroke='#3a2615' stroke-width='1.5'/><rect x='-66' y='-54' width='132' height='104' rx='26' fill='url(#gp)' stroke='#2d6a2a' stroke-width='1.5'/>`+HERO[7]()+tree4(-58,-30,1)+tree4(60,30,1)+tree4(62,-26,.9)+fl4(-30,48)+o.it.map((t,i)=>h4(i<3?(i-1)*34:(i-3.5)*34,i<3?18:42,'#2f6fd0')).join('')+dock3(-92,-8)+`<text x='-75' y='-12' font-size='12' text-anchor='middle'>⚓</text>`;
+const PD=[['喬暨時期的多媒體音響：Pioneer OEM 產品 NPI，涵蓋規格、包裝與說明書，也協助 Klipsch、Delphi 等客戶的 RFQ。','Multimedia audio at Zylux: NPI for Pioneer OEM products covering specs, packaging and manuals, plus RFQs for Klipsch and Delphi.'],['寶成時期的球鞋：參與 Under Armour Speedform 開發，並共同開發 3D 列印鞋，推動到量產。','Athletic shoes at Pou Chen: worked on Under Armour Speedform and co-developed 3D-printed footwear toward mass production.'],['玉山銀行時期的企業放款：經營企業客戶、辦理放款並撰寫企業風險評估報告。','Corporate loans at E.SUN Bank: built corporate accounts, processed loans and wrote risk assessment reports.'],['中強光電的顯示器：工業、醫療、商用與電競顯示器的 ODM 專案，從需求確認到量產。','Displays at Coretronic: ODM programs for industrial, medical, commercial and gaming displays through mass production.'],['中強光電的 POS 機：整合工業電腦與顯示，與客戶確認架構與規格，並協調驗證。','POS terminals at Coretronic: integrated industrial PCs with displays, confirmed architecture and specs with customers, and coordinated validation.'],['達擎的戶外防水機：戶外與軌道交通 AIO，整合工業電腦，提供客戶一站式服務。','Outdoor waterproof AIO at AUO Display Plus: outdoor and rail transit all-in-one systems with integrated industrial PCs as a one-stop solution.'],['中強光電的烘豆機代工案：整合客戶需求，協調廠內資源改造生產線，以滿足生產需求。','Coffee roasters at Coretronic, a contract manufacturing project: integrated customer requirements and coordinated internal resources to retool the production line for production needs.'],['達擎的反射式顯示器：HiRaso 主動矩陣 ChLCD 產品線，從客戶需求、規格到量產。','Reflective displays at AUO Display Plus: the HiRaso active-matrix ChLCD line, from customer needs and specs to mass production.'],['鴻佰的 AI server board：NVIDIA、Apple 伺服器主板與模組組裝的 NPI 專案，從開發到量產。','AI server boards at Ingrasys: NPI for NVIDIA and Apple server motherboards and module assembly, from development to mass production.']];
+const trade2=()=>PR.map((p,i)=>`<g class='prd' data-p='${i}' style='cursor:pointer'><g><circle r='9' fill='#fff8e1' stroke='#7a5230' stroke-width='1.2'/><text font-size='12' text-anchor='middle' dy='4'>${p.e}</text></g><animateMotion dur='${46+i%4*6}s' begin='-${i*5}s' repeatCount='indefinite' path='${route(p.a,p.b)}' keyPoints='0;1;0' keyTimes='0;.5;1' calcMode='linear'/></g>`).join('');
+function showProd(i){const p=PR[i];clearInterval(spTm);spI=K[lang].kl.length-1;$('#sp').hidden=false;$('.sph').firstChild.nodeValue=p.e+' ';$('#spt').textContent=(lang==='en'?p.en:p.zh)+' · '+N(I[p.a])+' ⇄ '+N(I[p.b]);$('#spm').textContent=PD[i][lang==='en'?1:0];$('#spn').textContent=lang==='en'?'Close ✕':'關閉 ✕'}
+const TR4=[[40,-100],[-40,-100],[40,100],[-40,100],[-225,0],[-225,-170],[-225,170],[225,-175],[225,175],[110,-230],[-110,-230],[110,230],[-110,230],[-120,0],[225,-35],[225,35],[130,-215],[160,-228],[192,-216],[216,-198],[125,-195],[150,-200],[-130,-215],[-160,-228],[-192,-216],[-216,-198],[-125,-195],[-150,-200],[130,200],[160,214],[190,204],[216,190],[145,236],[190,236],[216,226],[128,178],[-130,214],[-160,230],[-190,216],[-216,236],[-125,240],[-150,198],[-216,200],[-228,-100],[-228,60],[-228,120],[228,-110],[228,70],[228,130],[64,-150],[-64,-150],[64,150],[-64,150]];
+function draw(){
+ closeSp();prods();
+ let s=`<defs><filter id='bl'><feGaussianBlur stdDeviation='2'/></filter><linearGradient id='sg' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#3aa0e6'/><stop offset='1' stop-color='#1a5aa6'/></linearGradient><radialGradient id='gl' cx='.4' cy='.3' r='.9'><stop offset='0' stop-color='#86d65a'/><stop offset='1' stop-color='#4a9e3e'/></radialGradient><linearGradient id='gp' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#8ee05e'/><stop offset='1' stop-color='#58aa44'/></linearGradient><linearGradient id='rk' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#a8825a'/><stop offset='1' stop-color='#5e4429'/></linearGradient></defs><rect x='-250' y='-270' width='800' height='540' fill='url(#sg)'/>`+[...Array(46)].map((_,i)=>{const x=i%2?250+(i*61)%290:-240+(i*131)%780,y=-260+(i*71)%520;return `<path d='M${x} ${y}q6 -6 12 0t12 0t12 0' stroke='#fff' stroke-width='2' fill='none' stroke-linecap='round' opacity='.6'><animateTransform attributeName='transform' type='translate' values='0,0;8,0;0,0' dur='${4+i%4}s' repeatCount='indefinite'/></path>`}).join('');
+ s+=`<rect x='-243' y='-262' width='486' height='526' rx='36' fill='none' stroke='#fff' stroke-width='12' opacity='.45' filter='url(#bl)'/><rect x='-235' y='-247' width='470' height='510' rx='30' fill='url(#rk)' stroke='#3a2615' stroke-width='2'/><rect x='-235' y='-255' width='470' height='510' rx='30' fill='url(#gl)' stroke='#2d6a2a' stroke-width='2.5'/>`+[[-150,-215,44,15,'#a8ec7a'],[150,-140,50,16,'#4f9a42'],[-190,100,44,15,'#a8ec7a'],[190,200,46,15,'#4f9a42'],[0,-120,38,12,'#a8ec7a'],[-60,215,50,14,'#4f9a42']].map(e=>`<ellipse cx='${e[0]}' cy='${e[1]}' rx='${e[2]}' ry='${e[3]}' fill='${e[4]}' opacity='.5'/>`).join('')+[[-200,-120],[200,-100],[-205,60],[205,120],[-30,-215],[45,215],[-205,-210],[205,-215],[140,-205],[175,-190],[-140,-205],[-175,-190],[140,190],[175,225],[-140,225],[-175,205],[-225,-60],[225,-65],[225,100],[-225,90],[60,-130],[-60,-130],[60,130],[-60,130],[100,45],[-100,45],[100,-45],[-100,-45]].map(f=>fl4(f[0],f[1])+fl4(f[0]+9,f[1]+6)).join('')+TR4.map(t=>tree4(t[0],t[1],1.2)).join('');
+ s+=`<rect x='-91' y='-255' width='14' height='510' fill='#3aa0e6' stroke='#e8f6ff' stroke-width='2'/><rect x='77' y='-255' width='14' height='510' fill='#3aa0e6' stroke='#e8f6ff' stroke-width='2'/>`;
+ const sp=I.slice(1,7).map(o=>o.y<0&&o.x!==0?`M${o.x},${o.y}V-110H0V0`:`M${o.x},${o.y}H0V0`),rg=L.map(l=>{const a=I[l[0]],b=I[l[1]];return l[0]===6?`M${a.x},${a.y}V${b.y}H${b.x}`:`M${a.x},${a.y}H${b.x}V${b.y}`}),all=[...sp,'M0,0H240',...rg];
+ all.forEach(d=>s+=`<path d='${d}' stroke='#7a5a30' stroke-width='16' fill='none' stroke-linejoin='round'/>`);
+ all.forEach(d=>s+=`<path d='${d}' stroke='#dcbc84' stroke-width='11' fill='none' stroke-linejoin='round'/><path d='${d}' stroke='#a98652' stroke-width='2.5' stroke-dasharray='.1 8' stroke-linecap='round' fill='none'/>`);
+ [[84,-175],[84,-110],[84,0],[84,88],[-84,-175],[-84,-110],[-84,88],[-84,175]].forEach(b=>s+=br3(b[0],b[1]));
+ s+=dock3(235,-8)+`<rect x='222' y='-26' width='12' height='12' fill='#c9955a' stroke='#3a2615' stroke-width='1.2'/><text x='252' y='-12' font-size='12' text-anchor='middle'>⚓</text>`;let bn='';
+ [...I].sort((a,b)=>a.y-b.y).forEach(o=>{
+  const c0=o.k===0,c7=o.k===7;
+  const body=c0?cap4(o):c7?isl4(o):plot4(o);
+  const by=c0?-80:c7?-82:-70;
+  s+=`<g class='isl' data-i='${o.k}' tabindex='0' role='button' aria-label='${N(o)}' transform='translate(${o.x},${o.y})'><g class='i'><ellipse cy='${c0?70:66}' rx='${c7?82:64}' ry='8' fill='#0b2a3d' opacity='.28' filter='url(#bl)'/>`+body+`</g></g>`;bn+=`<g transform='translate(${o.x},${o.y})'>${ban4(`${o.e} ${N(o)}`,by,c0?18:16)}</g>`;
+ });
+ const kt=lang==='en'?'King Sean (me)':'國王：洪斌翔（我）';
+ const fer=`<g style='pointer-events:none'>${boat4()}<animateMotion dur='52s' repeatCount='indefinite' path='M${X1},0H${X2}' keyPoints='0;0;1;1;0;0' keyTimes='0;.21;.27;.73;.79;1' calcMode='linear'/></g>`;
+ const pb=c=>`<g transform='translate(0,-8)'>${ch(c,'#3b2a1a',null,.9)}</g>`;
+ s+=trade2()+bn+fer+mvK2(`<title>${kt}</title>`+king4())+mv3('M-16,42V48',3,guard4())+mv3('M16,42V48',3,guard4())+mv3('M109,-88H20',12,ch('#2e86c1','#5a3a22'))+mv3('M-109,88H-20',14,ch('#16a085','#3b2a1a'))+mv3('M-109,-88H-20',13,ch('#8e44ad','#3b2a1a'))+mv3('M165,-26V26',6,ch('#d4ac0d','#5a3a22'))+mv3('M-165,-26V26',7,ch('#c0392b','#3b2a1a'))+mv3(`M${X1},18H${X2}`,14,boat4()+pb('#e08a2e'))+mv3(`M${X2},-18H${X1}`,16,boat4()+pb('#8e44ad'))+mv3('M395,40H485',9,ch('#16a085','#3b2a1a'))+mv3('M420,-42H500',11,ch('#d4ac0d','#5a3a22'))+mv3('M300,70H520',60,ship(1))+mv3('M520,-110H330',70,ship(1.2))+mv3('M280,-120H380',40,ship(.9));
+ s+=[[-200,-245,0],[100,-262,1],[300,-240,2],[430,-200,3]].map(c=>`<g style='pointer-events:none'><animateTransform attributeName='transform' type='translate' values='${c[0]},${c[1]};${c[0]+260},${c[1]};${c[0]},${c[1]}' dur='${70+c[2]*20}s' repeatCount='indefinite'/><g fill='#fff'><ellipse cy='3' rx='30' ry='7' fill='#c9dcf0'/><circle cx='-10' r='9'/><circle cx='4' cy='-6' r='12'/><circle cx='18' cy='-1' r='9'/><circle cx='28' cy='2' r='6'/></g></g>`).join('');
+ $('#svg').innerHTML=s;
+ refresh();
+}
+function drawComic(){
+ closeSp();prods();
+ let s=`<defs><filter id='bl'><feGaussianBlur stdDeviation='2'/></filter></defs><rect x='-250' y='-270' width='800' height='540' fill='#43b6dd'/><rect x='-250' y='-270' width='800' height='260' fill='#7ad6ee' opacity='.35'/>`+[...Array(22)].map((_,i)=>{const x=-240+(i*131)%780,y=-260+(i*71)%520;return `<path d='M${x} ${y}q5 -5 10 0t10 0' stroke='#fff' stroke-width='1.8' fill='none' stroke-linecap='round' opacity='.7'><animateTransform attributeName='transform' type='translate' values='0,0;6,0;0,0' dur='${4+i%4}s' repeatCount='indefinite'/></path>`}).join('');
+ s+=`<rect x='-235' y='-247' width='470' height='510' rx='30' fill='#7a5230' ${IK} stroke-width='3'/><rect x='-235' y='-255' width='470' height='510' rx='30' fill='#72d25c' ${IK} stroke-width='3'/>`+[[-150,-215,44,15,'#9be67e'],[150,-140,50,16,'#58b848'],[-190,100,44,15,'#9be67e'],[190,200,46,15,'#58b848'],[0,-120,38,12,'#9be67e'],[-60,215,50,14,'#58b848']].map(e=>`<ellipse cx='${e[0]}' cy='${e[1]}' rx='${e[2]}' ry='${e[3]}' fill='${e[4]}' opacity='.55'/>`).join('')+TR3.map(t=>tree3(t[0],t[1],1.2)).join('');
+ s+=`<rect x='-91' y='-255' width='14' height='510' fill='#43b6dd' ${IK} stroke-width='2'/><rect x='77' y='-255' width='14' height='510' fill='#43b6dd' ${IK} stroke-width='2'/>`;
+ const sp=I.slice(1,7).map(o=>`M${o.x},${o.y}H0V0`),rg=L.map(l=>`M${I[l[0]].x},${I[l[0]].y}H${I[l[1]].x}V${I[l[1]].y}`),all=[...sp,'M0,0H240',...rg];
+ all.forEach(d=>s+=`<path d='${d}' stroke='#2b1a10' stroke-width='16' fill='none' stroke-linejoin='round'/>`);
+ all.forEach(d=>s+=`<path d='${d}' stroke='#f3dfa6' stroke-width='11' fill='none' stroke-linejoin='round'/><path d='${d}' stroke='#c9a766' stroke-width='2.5' stroke-dasharray='.1 8' stroke-linecap='round' fill='none'/>`);
+ [[84,-175],[84,-88],[84,0],[84,88],[-84,-88],[-84,88],[-84,175]].forEach(b=>s+=br3(b[0],b[1]));
+ s+=dock3(235,-8)+`<rect x='222' y='-26' width='12' height='12' fill='#c9955a' ${IK} stroke-width='1.6'/><text x='252' y='-12' font-size='12' text-anchor='middle'>⚓</text>`+trade();
+ [...I].sort((a,b)=>a.y-b.y).forEach(o=>{
+  const n=o.it.length,c0=o.k===0,c7=o.k===7;
+  const hs=o.it.map((t,i)=>{const r=i>3?1:0,c=i%4,cols=Math.min(4,n-4*r);return house3((c-(cols-1)/2)*25,r*30+8,RF[o.k])}).join('');
+  const body=c0?cap3(o):c7?isl3(o):`<rect x='-56' y='-46' width='112' height='112' rx='14' fill='#8a5a30' ${IK} stroke-width='3'/><rect x='-56' y='-56' width='112' height='112' rx='14' fill='#8fe070' class='pt' ${IK} stroke-width='3'/><ellipse cx='-22' cy='-34' rx='24' ry='8' fill='#c6f5a0' opacity='.6'/>`+tree3(-44,40,.9)+tree3(44,40,.9)+hs;
+  const by=c0?-72:c7?-78:-68;
+  s+=`<g class='isl' data-i='${o.k}' tabindex='0' role='button' aria-label='${N(o)}' transform='translate(${o.x},${o.y})'><g class='i'><ellipse cy='${c0?68:66}' rx='${c7?80:62}' ry='8' fill='#0b2a3d' opacity='.28' filter='url(#bl)'/>`+body+ban3(`${o.e} ${N(o)}`,by,c0?18:16,RF[o.k]||'#2e86c1')+`</g></g>`;
+ });
+ const kt=lang==='en'?'King Sean (me)':'國王：洪斌翔（我）';
+ const fer=`<g style='pointer-events:none'>${boat3()}<animateMotion dur='52s' repeatCount='indefinite' path='M${X1},0H${X2}' keyPoints='0;0;1;1;0;0' keyTimes='0;.21;.27;.73;.79;1' calcMode='linear'/></g>`;
+ const pb=c=>`<g transform='translate(0,-6) scale(.85)'>${ppl3(c,'#3b2a1a')}</g>`;
+ s+=fer+mvK(`<title>${kt}</title>`+king3())+mv3('M-16,42V48',3,guard3())+mv3('M16,42V48',3,guard3())+mv3('M109,-88H20',12,ppl3('#2e86c1','#5a3a22'))+mv3('M-109,88H-20',14,ppl3('#16a085','#3b2a1a'))+mv3('M20,88H109',11,ppl3('#e08a2e','#7a4a1a'))+mv3('M-109,-88H-20',13,ppl3('#8e44ad','#3b2a1a'))+mv3('M165,-26V26',6,ppl3('#d4ac0d','#5a3a22'))+mv3('M-165,-26V26',7,ppl3('#c0392b','#3b2a1a'))+mv3(`M${X1},18H${X2}`,14,boat3()+pb('#e08a2e'))+mv3(`M${X2},-18H${X1}`,16,boat3()+pb('#8e44ad'))+mv3('M395,40H485',9,ppl3('#16a085','#3b2a1a'))+mv3('M420,-42H500',11,ppl3('#d4ac0d','#5a3a22'));
+ s+=[[-200,-245,0],[100,-262,1],[300,-240,2]].map(c=>`<g style='pointer-events:none' opacity='.92'><animateTransform attributeName='transform' type='translate' values='${c[0]},${c[1]};${c[0]+260},${c[1]};${c[0]},${c[1]}' dur='${70+c[2]*20}s' repeatCount='indefinite'/><g fill='#2b1a10' stroke='#2b1a10' stroke-width='4' stroke-linejoin='round'><circle r='9'/><circle cx='12' cy='-5' r='11'/><circle cx='25' r='9'/></g><g fill='#fff'><circle r='9'/><circle cx='12' cy='-5' r='11'/><circle cx='25' r='9'/></g></g>`).join('');
+ $('#svg').innerHTML=s;
+ refresh();
+}
+function drawHd(){
+ closeSp();prods();
+ let s=`<defs><radialGradient id='tg' cx='.35' cy='.3' r='.85'><stop offset='0' stop-color='#a9dc72'/><stop offset='1' stop-color='#2f7a3a'/></radialGradient><linearGradient id='wl' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#fbefd5'/><stop offset='1' stop-color='#d9c59a'/></linearGradient><radialGradient id='gg' cx='.4' cy='.35' r='.9'><stop offset='0' stop-color='#a8dd74'/><stop offset='1' stop-color='#5a9f4a'/></radialGradient><linearGradient id='pl' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#b4e583'/><stop offset='1' stop-color='#6eb356'/></linearGradient><linearGradient id='cf' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#a98450'/><stop offset='1' stop-color='#5d4528'/></linearGradient><linearGradient id='wg' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#6cc3dc'/><stop offset='1' stop-color='#2a78ad'/></linearGradient><linearGradient id='st' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#d7d7e0'/><stop offset='1' stop-color='#9494a4'/></linearGradient><linearGradient id='ray' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#fff4c8'/><stop offset='1' stop-color='#fff4c8' stop-opacity='0'/></linearGradient><filter id='bl'><feGaussianBlur stdDeviation='2'/></filter><filter id='sh2' x='-20%' y='-40%' width='140%' height='200%'><feDropShadow dx='0' dy='3' stdDeviation='2.5' flood-color='#000' flood-opacity='.45'/></filter><filter id='grain'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 .3 0 0 0 0 .2 0 0 0 0 .1 .7 0 0 0 -.25'/></filter></defs>`;
+ s+=`<rect x='-215' y='-225' width='660' height='450' fill='url(#wg)'/>`+[...Array(18)].map((_,i)=>`<ellipse cx='${-200+(i*97)%640}' cy='${-210+(i*61)%430}' rx='14' ry='2' fill='#fff' opacity='.2'><animate attributeName='opacity' values='.08;.35;.08' dur='${3+i%4}s' begin='-${i}s' repeatCount='indefinite'/></ellipse>`).join('');
+ s+=`<rect x='-200' y='-202' width='400' height='420' rx='30' fill='url(#cf)' filter='url(#sh2)'/><rect x='-200' y='-210' width='400' height='420' rx='30' fill='url(#gg)'/>`+[[-120,-170,40,16,'#c8f08a'],[110,-120,50,18,'#4f9a42'],[-150,60,44,16,'#c8f08a'],[150,150,46,16,'#4f9a42'],[0,-60,36,12,'#c8f08a'],[-30,170,50,14,'#4f9a42']].map(e=>`<ellipse cx='${e[0]}' cy='${e[1]}' rx='${e[2]}' ry='${e[3]}' fill='${e[4]}' opacity='.35'/>`).join('')+TR2.map(t=>tree2(t[0],t[1],1.2)).join('');
+ s+=`<rect x='-71' y='-210' width='12' height='420' fill='url(#wg)' stroke='#7a5a30' stroke-width='1.5'/><rect x='59' y='-210' width='12' height='420' fill='url(#wg)' stroke='#7a5a30' stroke-width='1.5'/>`;
+ const sp=I.slice(1,7).map(o=>`M${o.x},${o.y}H0V0`),rg=L.map(l=>`M${I[l[0]].x},${I[l[0]].y}H${I[l[1]].x}V${I[l[1]].y}`),all=[...sp,'M0,0H208',...rg];
+ all.forEach(d=>s+=`<path d='${d}' stroke='#a9854f' stroke-width='15' fill='none' stroke-linejoin='round'/>`);
+ all.forEach(d=>s+=`<path d='${d}' stroke='#e8cf9c' stroke-width='10' fill='none' stroke-linejoin='round'/><path d='${d}' stroke='#b08c58' stroke-width='2.5' stroke-dasharray='.1 7' stroke-linecap='round' fill='none'/>`);
+ [[65,-140],[65,-70],[65,0],[65,70],[-65,-70],[-65,70],[-65,140]].forEach(b=>s+=br2(b[0],b[1]));s+=port2();s+=trade();
+ [...I].sort((a,b)=>a.y-b.y).forEach(o=>{
+  const n=o.it.length,c0=o.k===0,c7=o.k===7;
+  const hs=o.it.map((t,i)=>{const r=i>3?1:0,c=i%4,cols=Math.min(4,n-4*r);return house2((c-(cols-1)/2)*25,r*30+8,RF[o.k])}).join('');
+  const body=c0?cap2(o):c7?isl2(o):`<rect x='-56' y='-48' width='112' height='112' rx='16' fill='url(#cf)'/><rect x='-56' y='-56' width='112' height='112' rx='16' fill='url(#pl)' class='pt' stroke='#efe2b0' stroke-width='3'/><ellipse cx='-20' cy='-30' rx='26' ry='10' fill='#d6f5a0' opacity='.35'/>`+tree2(-44,40,.9)+tree2(44,40,.9)+hs;
+  const by=c0?-72:c7?-78:-66,lab=`${o.e} ${N(o)}`;
+  s+=`<g class='isl' data-i='${o.k}' tabindex='0' role='button' aria-label='${N(o)}' transform='translate(${o.x},${o.y})'><g class='i'><ellipse cy='${c0?66:62}' rx='${c7?80:62}' ry='8' fill='#0b2a3d' opacity='.28' filter='url(#bl)'/>`+body+ban(lab,by,c0?16:14)+`</g></g>`;
+ });
+ const kt=lang==='en'?'King Sean (me)':'國王：洪斌翔（我）';
+ s+=mv2('M-30,-4H30',9,`<title>${kt}</title>`+king2(),'king')+mv2('M-16,42V48',3,guard2())+mv2('M16,42V48',3,guard2())+mv2('M74,-70H8',12,ppl('#2e86c1','#5a3a22'))+mv2('M-74,70H-8',14,ppl('#16a085','#3b2a1a'))+mv2('M8,70H74',11,ppl('#e08a2e','#7a4a1a'))+mv2('M-74,-70H-8',13,ppl('#8e44ad','#3b2a1a'))+mv2('M130,-14V14',6,ppl('#d4ac0d','#5a3a22'))+mv2('M-130,-14V14',7,ppl('#c0392b','#3b2a1a'))+mv2('M240,16H262',6,boat2())+mv2('M240,-16H262',8,boat2());
+ s+=`<polygon points='-215,-225 -110,-225 60,225 -60,225' fill='url(#ray)' opacity='.16' style='mix-blend-mode:screen;pointer-events:none'><animate attributeName='opacity' values='.1;.2;.1' dur='7s' repeatCount='indefinite'/></polygon><polygon points='60,-225 130,-225 300,225 220,225' fill='url(#ray)' opacity='.1' style='pointer-events:none'/>`+[...Array(14)].map((_,i)=>{const y=-180+(i*47)%360;return `<circle cx='${-190+(i*83)%600}' cy='${y}' r='1.7' fill='#fff7c2' style='pointer-events:none'><animate attributeName='cy' values='${y};${y-26};${y}' dur='${6+i%5}s' repeatCount='indefinite'/><animate attributeName='opacity' values='0;.9;0' dur='${6+i%5}s' repeatCount='indefinite'/></circle>`}).join('')+`<rect x='-215' y='-225' width='660' height='450' filter='url(#grain)' opacity='.5' style='pointer-events:none'/>`;
+ $('#svg').innerHTML=s;
+ refresh();
+}
+function drawPx(){
+ prods();let s=`<defs><pattern id='gr' width='8' height='8' patternUnits='userSpaceOnUse'><rect width='8' height='8' fill='var(--g1)'/><rect x='1' y='2' width='1' height='2' fill='var(--g2)'/><rect x='5' y='6' width='2' height='1' fill='var(--g2)'/><rect x='6' y='1' width='1' height='1' fill='var(--g3)'/></pattern><pattern id='wt' width='16' height='16' patternUnits='userSpaceOnUse'><rect width='16' height='16' fill='var(--w1)'/><rect x='2' y='4' width='5' height='1' fill='var(--w2)'/><rect x='10' y='11' width='4' height='1' fill='var(--w2)'/></pattern></defs>`;
+ const lp='M-188-210H188V-198H200V198H188V210H-188V198H-200V-198H-188Z';
+ s+=`<rect x='-215' y='-225' width='660' height='450' fill='url(#wt)'/><path d='${lp}' fill='var(--cliff)' transform='translate(0,8)'/><path d='${lp}' fill='url(#gr)'/>`+TR2.map(t=>tree(t[0],t[1])).join('')+`<rect x='-71' y='-210' width='12' height='420' fill='url(#wt)' stroke='var(--cliff)' stroke-width='2'/><rect x='59' y='-210' width='12' height='420' fill='url(#wt)' stroke='var(--cliff)' stroke-width='2'/>`;
+ const sp=I.slice(1,7).map(o=>`M${o.x},${o.y}H0V0`),rg=L.map(l=>`M${I[l[0]].x},${I[l[0]].y}H${I[l[1]].x}V${I[l[1]].y}`),all=[...sp,'M0,0H208',...rg];
+ all.forEach(d=>s+=`<path d='${d}' stroke='var(--dirt2)' stroke-width='14' fill='none'/>`);
+ all.forEach(d=>s+=`<path d='${d}' stroke='var(--dirt)' stroke-width='9' fill='none'/>`);
+ rg.forEach((d,i)=>s+=`<rect x='-3' y='-3' width='6' height='6' fill='var(--acc)'><animateMotion dur='${4+i%3}s' repeatCount='indefinite' path='${d}'/></rect>`);
+ [[65,-140],[65,-70],[65,0],[65,70],[-65,-70],[-65,70],[-65,140]].forEach(b=>s+=br(b[0],b[1]));s+=port();s+=trade();
+ [...I].sort((a,b)=>a.y-b.y).forEach(o=>{
+  const n=o.it.length,c0=o.k===0;
+  const hs=o.it.map((t,i)=>{const r=i>3?1:0,c=i%4,cols=Math.min(4,n-4*r);return house((c-(cols-1)/2)*25,r*30+8,RF[o.k])}).join('');
+  const body=c0?cap(o):o.k===7?isl(o):px(-56,-56,112,112,'var(--fence)')+px(-53,-53,106,106,'url(#gr)')+tree(-44,40)+tree(44,40)+hs;
+  const sw=c0?140:96,sy=c0?-80:o.k===7?-78:-50;
+  s+=`<g class='isl' data-i='${o.k}' tabindex='0' role='button' aria-label='${N(o)}' transform='translate(${o.x},${o.y})'><g class='i'>`+body+px(-sw/2,sy,sw,20,'#6b4423')+px(-sw/2+2,sy+2,sw-4,16,'#e0b878')+`<text y='${sy+14}' text-anchor='middle' font-size='11' font-weight='700' fill='#3b2412'>${o.e} ${N(o)}</text></g></g>`;
+ });
+ const kt=lang==='en'?'King Sean (me)':'國王：洪斌翔（我）';
+ s+=mv('M-30,-4H30',9,`<title>${kt}</title>`+king())+mv('M-16,42V48',3,guard())+mv('M16,42V48',3,guard())+mv('M74,-70H8',12,person('#2e86c1','#5a3a22'))+mv('M-74,70H-8',14,person('#16a085','#3b2a1a'))+mv('M8,70H74',11,person('#e08a2e','#7a4a1a'))+mv('M-74,-70H-8',13,person('#8e44ad','#3b2a1a'))+mv('M130,-14V14',6,person('#d4ac0d','#5a3a22'))+mv('M-130,-14V14',7,person('#c0392b','#3b2a1a'))+mv('M240,16H262',6,boat())+mv('M240,-16H262',8,boat());
+ $('#svg').innerHTML=s;
+ refresh();
+}
+function drawPrev(){
+ let s=`<defs><pattern id="gr" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="var(--g1)"/><rect x="1" y="2" width="1" height="2" fill="var(--g2)"/><rect x="5" y="6" width="2" height="1" fill="var(--g2)"/><rect x="6" y="1" width="1" height="1" fill="var(--g3)"/></pattern><pattern id="wt" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="var(--w1)"/><rect x="2" y="4" width="5" height="1" fill="var(--w2)"/><rect x="10" y="11" width="4" height="1" fill="var(--w2)"/></pattern></defs>`;
+ const lp='M-188-210H188V-198H200V198H188V210H-188V198H-200V-198H-188Z';
+ s+=`<rect x="-215" y="-225" width="430" height="450" fill="url(#wt)"/><path d="${lp}" fill="var(--cliff)" transform="translate(0,8)"/><path d="${lp}" fill="url(#gr)"/>`;
+ s+=TR.map(t=>tree(t[0],t[1])).join('');
+ let rd='';
+ L.forEach(l=>{const a=I[l[0]],c=I[l[1]],d=`M${a.x},${a.y}H${c.x}V${c.y}`;
+  rd+=`<path d="${d}" stroke="var(--dirt2)" stroke-width="14" fill="none"/><path d="${d}" stroke="var(--dirt)" stroke-width="9" fill="none"/><rect x="-3" y="-3" width="6" height="6" fill="var(--acc)"><animateMotion dur="${4+l[0]%3}s" repeatCount="indefinite" path="${d}"/></rect>`});
+ s+=rd;
+ [...I].sort((a,b)=>a.y-b.y).forEach(o=>{
+  const n=o.it.length;
+  const hs=o.it.map((t,i)=>{const r=i>3?1:0,c=i%4,cols=Math.min(4,n-4*r);return house((c-(cols-1)/2)*25,r*30+8,RF[o.k])}).join('');
+  s+=`<g class="isl" data-i="${o.k}" tabindex="0" role="button" aria-label="${N(o)}" transform="translate(${o.x},${o.y})"><g class="i">`+px(-56,-56,112,112,'var(--fence)')+px(-53,-53,106,106,'url(#gr)')+tree(-44,40)+tree(44,40)+hs+px(-48,-50,96,20,'#6b4423')+px(-46,-48,92,16,'#e0b878')+`<text y="-36" text-anchor="middle" font-size="11" font-weight="700" fill="#3b2412">${o.e} ${N(o)}</text></g></g>`;
+ });
+ const lp2=`M${I[1].x},${I[1].y}`+L.map(l=>`H${I[l[1]].x}V${I[l[1]].y}`).join('');
+ s+=`<g><title>${lang==='en'?'Sean (easter egg)':'小斌（彩蛋）'}</title>`+px(-3,-10,6,2,'#3b2a1a')+px(-3,-8,6,4,'#f6d2b0')+px(-3,-4,6,6,'#f08a2d')+px(-3,2,2,3,'#334')+px(1,2,2,3,'#334')+`<animateMotion dur="28s" repeatCount="indefinite" path="${lp2}"/></g>`;
+ $('#svg').innerHTML=s;
+ refresh();
+}
+function drawOld(){
+ let s='';
+ [...I].sort((a,b)=>a.y-b.y).forEach(o=>{
+  const n=o.it.length;
+  const b=o.it.map((t,i)=>{const a=-Math.PI/2+i*2*Math.PI/n,bx=Math.cos(a)*50,by=Math.sin(a)*30+3;
+   return `<g transform="translate(${bx.toFixed(1)},${by.toFixed(1)})"><rect x="-5" y="-3" width="10" height="8" rx="1" fill="var(--bld)"/><path d="M-7-3L0-9L7-3Z" fill="var(--acc)"/></g>`}).join('');
+  s+=`<g class="isl" data-i="${o.k}" tabindex="0" role="button" aria-label="${N(o)}" transform="translate(${o.x},${o.y})"><g class="i">`+
+  `<ellipse cx="0" cy="${R*0.93+6}" rx="${R*0.8}" ry="8" fill="#000" opacity=".12"/>`+
+  `<polygon points="${hex(0,9,R*0.93)}" fill="var(--c${o.k})"/><polygon points="${hex(0,9,R*0.93)}" fill="#000" opacity=".28"/>`+
+  `<polygon class="top" points="${hex(0,0,R*0.93)}" fill="var(--c${o.k})"/>${b}`+
+  `<text y="-4" text-anchor="middle" font-size="20">${o.e}</text><text y="14" text-anchor="middle" font-size="12" font-weight="700" fill="var(--ink)">${N(o)}</text></g></g>`;
+ });
+ let ln='',fg=[];
+ L.forEach(l=>{const a=I[l[0]],c=I[l[1]],d=`M${a.x},${a.y}L${c.x},${c.y}`;
+  ln+=`<path d="${d}" stroke="var(--acc)" stroke-width="2.5" stroke-dasharray="2 6" stroke-linecap="round" fill="none" opacity=".85"/><circle r="3.6" fill="var(--acc)"><animateMotion dur="${4+l[0]%3}s" repeatCount="indefinite" path="${d}"/></circle>`;fg.push(`${I[l[0]].x},${I[l[0]].y-6}`)});
+ const fig=`<g><title>${lang==='en'?'Sean (easter egg)':'小斌（彩蛋）'}</title><circle r="6" fill="#f6d2b0"/><circle cx="-2.5" cy="-.5" r="2" fill="none" stroke="#333" stroke-width=".8"/><circle cx="2.5" cy="-.5" r="2" fill="none" stroke="#333" stroke-width=".8"/><rect x="-5" y="5" width="10" height="7" rx="3" fill="#f08a2d"/><animateMotion dur="26s" repeatCount="indefinite" path="M${fg.join('L')}Z"/></g>`;
+ $('#svg').innerHTML=s+ln+fig;
+ refresh();
+}
+function refresh(){
+ document.querySelectorAll('.isl').forEach(g=>{const o=I[g.dataset.i];g.classList.toggle('on',sel===o.k);g.style.opacity=dim(o)?.28:1});
+ $('#clr').style.display=(jobF||qs)?'inline-block':'none';
+ panel();
+}
+function panelOld(){
+ const p=$('#panel');
+ if(sel<0){p.innerHTML=`<h2>歡迎上島</h2><p class="m">點任一座島，看這項能力背後做過哪些事。虛線上跑動的小圓點是「協作線」，代表能力之間怎麼互相支援。</p><p class="m">共 ${I.length} 座島、${tot} 個細項、${L.length} 條協作線。試著找找島上穿橘色背心的小人。</p>`;return}
+ const o=I[sel],ls=L.filter(l=>l[0]===sel||l[1]===sel);
+ p.innerHTML=`<h2>${o.e} ${o.n}</h2><p class="m">${o.d}</p><ul>${o.it.map(t=>`<li><span class="chip">${J[t[0]][0].split(' ')[0]}</span>${t[1]}</li>`).join('')}</ul><h3>協作線</h3>`+
+ (ls.map(l=>{const k=l[0]===sel?l[1]:l[0];return `<p class="lk">↔ <a data-g="${k}">${I[k].n}</a>：${l[2]}</p>`}).join('')||'<p class="m">這座島在中心，和每一座島都有協作。</p>');
+}
+function listsOld(){
+ $('#grid').innerHTML=I.map(o=>`<div class="card"><b>${o.e} ${o.n}</b><ul>${o.it.map(t=>`<li><span class="chip">${J[t[0]][0].split(' ')[0]}</span>${t[1]}</li>`).join('')}</ul></div>`).join('');
+ $('#rows').innerHTML=Object.keys(J).map(j=>`<div class="row" data-j="${j}"><b>${J[j][0]}</b><small>${J[j][1]}</small><div>${I.map(o=>[o,cnt(o,j)]).filter(a=>a[1]).map(a=>`<span class="chip" style="background:var(--c${a[0].k})">${a[0].e} ${a[0].n} ×${a[1]}</span>`).join('')}</div></div>`).join('');
+}
+function show(v){view=v;
+ document.querySelectorAll('.bar [data-v]').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+ ['map','panel'].forEach(id=>$('#'+id).classList.toggle('show',v==='map'));
+ $('#list').classList.toggle('show',v==='list');$('#time').classList.toggle('show',v==='time');$('#prod').classList.toggle('show',v==='prod');
+}
+document.addEventListener('click',e=>{
+ const t=e.target;
+ if(t.closest('#lg')){setLang(lang==='zh'?'en':'zh');return}
+ const b=t.closest('[data-v]');if(b){show(b.dataset.v);return}
+ if(t.closest('#spn')){nextSp();return}if(t.closest('#spx')){closeSp();return}
+ const pr=t.closest('.prd');if(pr){showProd(+pr.dataset.p);return}
+ const kg=t.closest('.king');if(kg){sel=0;refresh();speak();return}
+ const g=t.closest('.isl');if(g){sel=+g.dataset.i;refresh();return}
+ const a=t.closest('[data-g]');if(a){sel=+a.dataset.g;refresh();return}
+ const r=t.closest('[data-j]');if(r){jobF=r.dataset.j;show('map');refresh();return}
+ if(t.closest('#clr')){jobF='';qs='';$('#q').value='';refresh()}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.classList&&e.target.classList.contains('isl')){sel=+e.target.dataset.i;refresh()}});
+$('#q').addEventListener('input',e=>{qs=e.target.value.trim().toLowerCase();refresh()});
+setLang(/^zh/i.test(navigator.language)?'zh':'en');
+</script></body></html>
